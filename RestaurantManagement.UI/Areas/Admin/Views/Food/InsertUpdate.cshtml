@@ -1,0 +1,135 @@
+﻿@model RestaurantManagement.UI.Areas.Admin.Models.FoodModel
+@{
+    ViewData["Title"] = "InsertUpdate";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="nk-content-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nk-block nk-block-lg">
+                <div class="nk-block-head">
+                    <div class="nk-block-head-content">
+                        <h4 class="title nk-block-title">Food Form</h4>
+                    </div>
+                </div>
+                <div class="card card-bordered card-preview">
+                    <div class="card-inner">
+                        <div class="preview-block">
+                            <span class="text-danger">@(ViewBag.Error is not null ? ViewBag.Error : "")</span>
+                            <span class="text-danger"></span>
+                            <div class="row gy-4">
+                                <form asp-controller="food" asp-action="insertupdate" asp-antiforgery="true" method="post"
+                                      class="form-validate is-alter" autocomplete="off" enctype="multipart/form-data">
+                                    <input type="hidden" asp-for="Id" />
+                                    <div class="col-sm-6 form-list-account">
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Food name</label>
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" asp-for="Name" placeholder="Enter foodname" />
+                                                <span asp-validation-for="Name" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Category</label>
+                                            <div class="form-control-wrap">
+                                                <select asp-for="CategoryId" class="form-control" asp-items="@((IEnumerable<SelectListItem>)ViewData["categories"])">
+                                                    <option value="">Select category</option>
+                                                </select>  
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Description</label>
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" asp-for="Description" placeholder="Enter description" />
+                                                <span asp-validation-for="Description" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Price</label>
+                                            <div class="form-control-wrap">
+                                                <input type="number" class="form-control" asp-for="Price" placeholder="Enter price" />
+                                                <span asp-validation-for="Price" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row gy-2">
+                                            <div class="col-md-3 col-sm-6">
+                                                <label class="form-label" for="default-01">Is Active</label>
+                                                <div class="form-control-wrap">
+                                                    <div class="preview-block">
+                                                        <div class="custom-control custom-switch">
+                                                            <input type="checkbox" checked class="custom-control-input" asp-for="IsActive">
+                                                            <label class="custom-control-label" for="IsActive"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="default-01">Available</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" class="form-control" asp-for="Available" placeholder="Enter Available" />
+                                                    <span asp-validation-for="Available" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-3 col-sm-6">
+                                            @{
+                                                if (Model.Id is null)
+                                                {
+                                                    <img id="img-avatar" src="~/images/no-pictures.png" height="90" />
+                                                }
+                                                else
+                                                {
+                                                    <img id="img-avatar" src="~/images/food/@(Model.Id).png" height="90" />
+                                                }
+                                            }
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-06">Image</label>
+                                            <div class="form-control-wrap">
+                                                <div class="form-file">
+                                                    <div class="form-file">
+                                                        <input type="file" id="avatar" name="Image">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row gy-2">
+                                            <div class="col-md-6 col-sm-6 btt-center">
+                                                <button type="submit" class="btn btn-outline-primary">Submit</button> &nbsp;
+                                                <a asp-controller="food" asp-action="index" asp-area="admin" title="cancle" class="btn btn-outline-primary">Cancle</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            document.getElementById('avatar').onchange = evt => {
+                const [file] = document.getElementById('avatar').files
+                if (file) {
+                    document.getElementById('img-avatar').src = URL.createObjectURL(file)
+                }
+
+            }
+        })
+    </script>
+}
+
+
+

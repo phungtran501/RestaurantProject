@@ -1,0 +1,62 @@
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href=".">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="~/admin/assets/images/favicon.png">
+    <!-- Page Title  -->
+    <title>Blank - Layout | DashLite Admin Template</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="~/admin/assets/css/dashlite.css?ver=3.2.2">
+    <link id="skin-default" rel="stylesheet" href="~/admin/assets/css/theme.css?ver=3.2.2">
+    <link href="~/admin/assets/css/libs/themify-icons.css" rel="stylesheet" />
+    <link href="~/lib/jquery-confirm/jquery-confirm.min.css" rel="stylesheet" />
+    <link href="~/lib/toaster/naranja.min.css" rel="stylesheet" />
+</head>
+
+<body class="nk-body bg-lighter npc-general has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main   -->
+        <div class="nk-main ">
+            <!-- sidebar   -->
+            <partial name="_SideBar.cshtml" />
+            <!-- sidebar    -->
+            <!-- wrap   -->
+            <div class="nk-wrap ">
+                <!-- main header   -->
+                <partial name="_Header.cshtml" />
+                <!-- main header    -->
+                <!-- content   -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer    -->
+                <partial name="_Footer.cshtml" />
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-confirm/jquery-confirm.min.js"></script>
+    <script src="~/lib/toaster/naranja.min.js"></script>
+    <script src="~/admin/assets/js/nioapp.min.js"></script>
+    <script src="~/admin/assets/js/scripts.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

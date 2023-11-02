@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="nk-block nk-block-lg">
+    <div class="nk-block-head">
+        <div class="nk-block-head-content">
+            <h4 class="nk-block-title">Caterory List</h4>
+        </div>
+    </div>
+    <div class="card card-bordered card-preview">
+        <div class="card-inner">
+            <table class="table" id="tbl-category" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th><a href="/admin/categories/insertupdate" title="Add new"><span class="ti-plus"></span></a></th>
+                        <th>Category Name</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    
+</div>
+
+
+@section Scripts {
+    <script src="~/lib/datatables/jquery.datatables.min.js"></script>
+    <script src="~/lib/datatables/datatables.bootstrap5.min.js"></script>
+    <script src="~/lib/datatables/initialdatatable.js"></script>
+
+    <script>
+
+        const columns = [
+            { "data": "id", "name": "id", "width": "100px" },
+            { "data": "name", "name": "name", "autoWidth": true },
+        ];
+
+        const config = {
+            elementName: '#tbl-category',
+            url: '/admin/categories/getDataCategory',
+            columns: columns
+        };
+
+        initialDatatable(config);
+
+        $(document).on('click', '.btn-delete', function (event) {
+
+            event.preventDefault();
+
+            const key = $(this).closest('span').data('key');
+
+            confirmJQ('confirm', 'are you sure to delete?', function () {
+
+                $.ajax({
+                    url: `/admin/categories/delete?key=${key}`,
+                    method: 'DELETE',
+                    dataType: 'json',
+                    success: function (response) {
+                        var toaster = new toasterNaranja('Success', 'Delete successful');
+                        toaster.log('Success', 'Delete successful');
+                        $('#tbl-category').DataTable().ajax.reload();
+                    },
+                    error: function (error) {
+
+                    }
+
+                });
+
+
+            }, function () {
+
+            })
+        });
+
+
+
+    </script>
+}
+

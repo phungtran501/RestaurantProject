@@ -1,0 +1,1837 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RestaurantManagement.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RestaurantManagement.UI.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\dashlite.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\dashlite.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\dashlite.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\dashlite.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\dashlite.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\dashlite.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\dashlite.rtl.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\dashlite.rtl.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\editors\\quill.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\editors\\quill.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\editors\\quill.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\editors\\quill.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\editors\\summernote.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\editors\\summernote.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\editors\\summernote.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\editors\\summernote.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\editors\\tinymce.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\editors\\tinymce.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\editors\\tinymce.rtl.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\editors\\tinymce.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\libs\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\libs\\bootstrap-icons.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\libs\\fontawesome-icons.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\libs\\fontawesome-icons.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\libs\\jstree.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\libs\\jstree.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\libs\\themify-icons.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\libs\\themify-icons.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\skins\\theme-blue.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\skins\\theme-blue.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\skins\\theme-egyptian.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\skins\\theme-egyptian.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\skins\\theme-green.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\skins\\theme-green.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\skins\\theme-purple.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\skins\\theme-purple.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\skins\\theme-red.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\skins\\theme-red.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\style-email.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\style-email.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\css\\theme.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\theme.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nioicon.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nioicon.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nioicon.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nioicon.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nioicon.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nioicon.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nioicon.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nioicon.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Bold.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Bold.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Bold.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Bold.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Bold.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Bold.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Bold.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Bold.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Regular.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Regular.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Regular.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Regular.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Regular.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Regular.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Nunito-Regular.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Nunito-Regular.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Bold.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Bold.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Bold.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Bold.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Bold.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Bold.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Bold.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Bold.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Light.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Light.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Light.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Light.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Light.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Light.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Light.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Light.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Medium.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Medium.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Medium.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Medium.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Medium.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Medium.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Medium.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Medium.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Regular.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Regular.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Regular.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Regular.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Regular.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Regular.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\Roboto-Regular.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\Roboto-Regular.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\summernote.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\summernote.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\summernote.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\summernote.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\summernote.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\summernote.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\summernote.woff2",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\summernote.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\themify.eot"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\themify.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\fonts\\tinymce-mobile.woff",
+      "PackagePath": "staticwebassets\\admin\\assets\\fonts\\tinymce-mobile.woff"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\arrow-2.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\arrow-2.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\avatar\\a-sm.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar\\a-sm.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\avatar\\b-sm.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar\\b-sm.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\avatar\\c-sm.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar\\c-sm.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\avatar\\d-sm.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\avatar\\d-sm.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\bch.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\bch.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\bnb.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\bnb.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\btc.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\btc.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\eos.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\eos.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\eth.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\eth.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\ltc.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\ltc.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\trx.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\trx.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\usdt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\usdt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\xlm.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\xlm.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\coins\\xps.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\coins\\xps.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\brand\\a.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\brand\\a.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\brand\\b.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\brand\\b.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\product\\a.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\product\\a.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\product\\b.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\product\\b.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\product\\c.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\product\\c.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\product\\d.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\product\\d.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\product\\e.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\product\\e.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\product\\f.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\product\\f.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\product\\g.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\product\\g.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\theme\\a.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\theme\\a.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\theme\\b.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\theme\\b.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\theme\\c.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\theme\\c.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\theme\\d.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\theme\\d.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\theme\\e.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\theme\\e.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\crm\\theme\\f.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\crm\\theme\\f.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\email\\kyc-pending.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\email\\kyc-pending.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\email\\kyc-progress.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\email\\kyc-progress.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\email\\kyc-success.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\email\\kyc-success.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\arg.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\arg.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\aus.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\aus.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\bangladesh.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\bangladesh.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\canada.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\canada.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\china-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\china-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\china.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\china.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\english-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\english-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\english.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\english.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\french-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\french-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\french.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\french.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\germany-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\germany-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\germany.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\germany.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\iran-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\iran-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\iran.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\iran.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\italy-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\italy-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\italy.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\italy.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\mexico.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\mexico.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\philipine.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\philipine.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\portugal.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\portugal.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\s-africa.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\s-africa.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\spain-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\spain-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\spain.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\spain.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\spanish-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\spanish-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\spanish.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\spanish.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\switzerland-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\switzerland-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\switzerland.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\switzerland.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\turkey-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\turkey-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\turkey.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\turkey.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\uk-sq.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\uk-sq.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\flags\\uk.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\flags\\uk.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\gfx\\error-404.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gfx\\error-404.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\gfx\\error-504.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gfx\\error-504.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\gfx\\job-survey.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gfx\\job-survey.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\gfx\\survey.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gfx\\survey.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\gfx\\work-desk.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\gfx\\work-desk.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\account-secure.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\account-secure.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\bills.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\bills.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\card-credit.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\card-credit.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\card-debit.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\card-debit.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\card-secure.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\card-secure.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\code-scan.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\code-scan.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\codes.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\codes.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\completely-satisfied.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\completely-satisfied.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\connect-secure.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\connect-secure.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\customize.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\customize.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\devices.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\devices.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\doc-checked.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\doc-checked.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\emails.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\emails.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\excel.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\excel.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-doc.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-doc.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-excel.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-excel.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-media.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-media.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-pdf.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-pdf.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-code-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-code-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-code.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-code.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-doc-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-doc-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-doc.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-doc.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-media-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-media-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-media.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-media.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-movie-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-movie-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-movie.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-movie.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-music-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-music-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-music.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-music.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-pdf-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-pdf-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-pdf.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-pdf.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-ppt-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-ppt-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-ppt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-ppt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-sheet-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-sheet-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-sheet.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-sheet.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-text-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-text-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-text.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-text.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-zip-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-zip-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-type-zip.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-type-zip.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-word.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-word.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\file-zip.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\file-zip.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\folder-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\folder-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\folder-secure-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\folder-secure-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\folder-secure.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\folder-secure.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\folder-shared-alt.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\folder-shared-alt.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\folder-shared.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\folder-shared.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\folder.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\folder.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\fornt-end-developer.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\fornt-end-developer.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\freelancing-service.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\freelancing-service.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\friends.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\friends.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\help-desk.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\help-desk.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\id-back.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\id-back.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\id-front.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\id-front.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\invoice.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\invoice.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\kyc-dv.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\kyc-dv.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\kyc-nid.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\kyc-nid.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\kyc-pp.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\kyc-pp.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\loop.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\loop.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\newspaper.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\newspaper.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\not-satisfied.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\not-satisfied.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\password-secure.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\password-secure.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\plan-s1.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\plan-s1.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\plan-s2.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\plan-s2.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\plan-s3.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\plan-s3.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\print-advertize.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\print-advertize.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\product-cc.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\product-cc.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\product-ee.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\product-ee.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\product-ig.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\product-ig.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\product-pp.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\product-pp.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\product-sc.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\product-sc.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\profile.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\profile.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\project-duplicate.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\project-duplicate.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\project-import.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\project-import.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\project-kanban.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\project-kanban.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\project-scrum.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\project-scrum.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\quite-satisfied.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\quite-satisfied.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\recheck.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\recheck.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\reports.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\reports.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\satisfied.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\satisfied.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\search-engine.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\search-engine.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\settings.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\settings.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\support-account.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\support-account.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\support-general.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\support-general.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\support-payment.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\support-payment.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\support-secure.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\support-secure.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\support.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\support.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\sync.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\sync.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\ux-designer.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\ux-designer.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\icons\\zip.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\icons\\zip.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\index.html",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\index.html"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo-dark-small.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-dark-small.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo-dark-small2x.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-dark-small2x.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo-dark.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-dark.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo-dark2x.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-dark2x.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo-small.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-small.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo-small2x.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-small2x.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\logo2x.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\logo2x.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\a.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\a.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\b.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\b.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\c.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\c.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\d.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\d.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\e.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\e.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\f.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\f.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\g.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\g.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\h.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\h.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\i.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\i.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\j.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\j.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-a.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-a.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-b.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-b.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-c.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-c.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-d.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-d.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-e.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-e.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-f.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-f.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-g.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-g.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\lg-h.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\lg-h.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\product\\video-a.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\video-a.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\qr\\qr-code.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\qr\\qr-code.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\promo-a.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\promo-a.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\promo-a2x.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\promo-a2x.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\promo-b.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\promo-b.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\promo-b2x.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\promo-b2x.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\promo-c.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\promo-c.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\promo-c2x.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\promo-c2x.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\slide-a.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\slide-a.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\slide-b.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\slide-b.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\slides\\slide-c.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\slides\\slide-c.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\socials\\facebook.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\socials\\facebook.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\socials\\medium.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\socials\\medium.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\socials\\twitter.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\socials\\twitter.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\socials\\youtube.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\socials\\youtube.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\a.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\a.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\b.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\b.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\c.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\c.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\d.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\d.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\e.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\e.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\f.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\f.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\g.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\g.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\images\\stock\\h.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\images\\stock\\h.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\apps\\calendar.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\apps\\calendar.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\apps\\chats.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\apps\\chats.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\apps\\file-manager.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\apps\\file-manager.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\apps\\inbox.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\apps\\inbox.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\apps\\kanban.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\apps\\kanban.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\apps\\messages.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\apps\\messages.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\bundle.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\bundle.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\charts\\chart-crm.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\charts\\chart-crm.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\charts\\chart-hotel.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\charts\\chart-hotel.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\charts\\chart-widgets.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\charts\\chart-widgets.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\charts\\gd-analytics.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\charts\\gd-analytics.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\charts\\gd-default.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\charts\\gd-default.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\charts\\gd-invest.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\charts\\gd-invest.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\datatable.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\datatable.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\editors.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\editors.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\example-chart.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\example-chart.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\example-dragula.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\example-dragula.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\example-listbox.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\example-listbox.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\example-map.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\example-map.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\example-sweetalert.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\example-sweetalert.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\example-toastr.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\example-toastr.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\example-tree.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\example-tree.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\datatable-btns.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\datatable-btns.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\dragula.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\dragula.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\dual-listbox.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\dual-listbox.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\editors\\quill.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\editors\\quill.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\editors\\skins\\content\\default\\content.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\editors\\skins\\content\\default\\content.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\editors\\summernote.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\editors\\summernote.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\editors\\tinymce.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\editors\\tinymce.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\fullcalendar.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\fullcalendar.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\jkanban.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\jkanban.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\jqvmap.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\jqvmap.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\jstree.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\jstree.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\libs\\tagify.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\libs\\tagify.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\nioapp.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\nioapp.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\admin\\assets\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\scripts.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\account\\728ccde9-be9a-4a0f-ad88-0fbd78e6f674.png",
+      "PackagePath": "staticwebassets\\images\\account\\728ccde9-be9a-4a0f-ad88-0fbd78e6f674.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\account\\7cda4a83-7a20-4e0e-ac49-2160a7d05b30.png",
+      "PackagePath": "staticwebassets\\images\\account\\7cda4a83-7a20-4e0e-ac49-2160a7d05b30.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\account\\c100a4c4-ab8d-4f9e-b078-245812e79c68.png",
+      "PackagePath": "staticwebassets\\images\\account\\c100a4c4-ab8d-4f9e-b078-245812e79c68.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\account\\f9c9758c-2d39-423d-822e-1359559724a2.png",
+      "PackagePath": "staticwebassets\\images\\account\\f9c9758c-2d39-423d-822e-1359559724a2.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\category\\1.png",
+      "PackagePath": "staticwebassets\\images\\category\\1.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\category\\6.png",
+      "PackagePath": "staticwebassets\\images\\category\\6.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\category\\8.png",
+      "PackagePath": "staticwebassets\\images\\category\\8.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\category\\beef-steak.png",
+      "PackagePath": "staticwebassets\\images\\category\\beef-steak.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\11.png",
+      "PackagePath": "staticwebassets\\images\\food\\11.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\12.png",
+      "PackagePath": "staticwebassets\\images\\food\\12.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\13.png",
+      "PackagePath": "staticwebassets\\images\\food\\13.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\14.png",
+      "PackagePath": "staticwebassets\\images\\food\\14.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\15.png",
+      "PackagePath": "staticwebassets\\images\\food\\15.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\16.png",
+      "PackagePath": "staticwebassets\\images\\food\\16.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\3.png",
+      "PackagePath": "staticwebassets\\images\\food\\3.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\4.png",
+      "PackagePath": "staticwebassets\\images\\food\\4.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\5.png",
+      "PackagePath": "staticwebassets\\images\\food\\5.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\6.png",
+      "PackagePath": "staticwebassets\\images\\food\\6.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\food\\9.png",
+      "PackagePath": "staticwebassets\\images\\food\\9.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\images\\no-pictures.png",
+      "PackagePath": "staticwebassets\\images\\no-pictures.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\datatables\\InitialDatatable.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\InitialDatatable.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\datatables\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\datatables\\responsive.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\lib\\datatables\\responsive.bootstrap5.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-confirm\\jquery-confirm.min.css",
+      "PackagePath": "staticwebassets\\lib\\jquery-confirm\\jquery-confirm.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-confirm\\jquery-confirm.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-confirm\\jquery-confirm.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\toaster\\naranja.min.css",
+      "PackagePath": "staticwebassets\\lib\\toaster\\naranja.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\lib\\toaster\\naranja.min.js",
+      "PackagePath": "staticwebassets\\lib\\toaster\\naranja.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\color.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\color.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\main.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\site\\assets\\css\\style.css"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\fonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\site\\assets\\fonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\arrow-2.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\arrow-2.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\arrow.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\arrow.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\check.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\check.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\circle-text.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\circle-text.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\down-arrow-clr.svg",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\down-arrow-clr.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\down-arrow.svg",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\down-arrow.svg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\logo-icon.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\logo-icon.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\logo-white-color.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\logo-white-color.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\logo-white.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\logo-white.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\pata-2.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\pata-2.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\pata.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\pata.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\patron-black.jpg",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\patron-black.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\patron.jpg",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\patron.jpg"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\quote.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\quote.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\sine.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\sine.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\img\\tripa.png",
+      "PackagePath": "staticwebassets\\site\\assets\\img\\tripa.png"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\site\\assets\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\jquery.fancybox.min.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\jquery.fancybox.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\preloader.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\preloader.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\assets\\js\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\site\\assets\\js\\sweetalert.min.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\components\\admin\\account.js",
+      "PackagePath": "staticwebassets\\site\\components\\admin\\account.js"
+    },
+    {
+      "Id": "F:\\RestaurantManagement\\RestaurantManagement.UI\\wwwroot\\site\\components\\home.js",
+      "PackagePath": "staticwebassets\\site\\components\\home.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RestaurantManagement.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RestaurantManagement.UI.props",
+      "PackagePath": "build\\RestaurantManagement.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RestaurantManagement.UI.props",
+      "PackagePath": "buildMultiTargeting\\RestaurantManagement.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RestaurantManagement.UI.props",
+      "PackagePath": "buildTransitive\\RestaurantManagement.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

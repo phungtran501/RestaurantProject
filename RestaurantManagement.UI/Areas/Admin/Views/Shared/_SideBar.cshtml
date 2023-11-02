@@ -1,0 +1,79 @@
+﻿<div class="nk-sidebar nk-sidebar-fixed is-dark " data-content="sidebarMenu">
+    <div class="nk-sidebar-element nk-sidebar-head">
+        <div class="nk-menu-trigger">
+            <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+            <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+        </div>
+        <div class="nk-sidebar-brand">
+            <a href="@Url.Action("Index", "home")" class="logo-link nk-sidebar-logo">
+                <img class="logo-light logo-img" src="~/admin/assets/images/logo.png" srcset="~/admin/assets/images/logo2x.png 2x" alt="logo">
+                <img class="logo-dark logo-img" src="~/admin/assets/images/logo-dark.png" srcset="~/admin/assets/images/logo-dark2x.png 2x" alt="logo-dark">
+            </a>
+        </div>
+    </div><!-- .nk-sidebar-element -->
+    <div class="nk-sidebar-element nk-sidebar-body">
+        <div class="nk-sidebar-content">
+            <div class="nk-sidebar-menu" data-simplebar>
+                <ul class="nk-menu">
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-dot-box"></em></span>
+                            <span class="nk-menu-text">System</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="@Url.Action("Index", "Account")" class="nk-menu-link">
+                                    <span class="nk-menu-text">Account</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="@Url.Action("Index", "Role")" class="nk-menu-link">
+                                    <span class="nk-menu-text">Role</span>
+                                </a>
+                            </li>
+                        </ul><!-- .nk-menu-sub -->
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-dot-box"></em></span>
+                            <span class="nk-menu-text">Management</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="@Url.Action("Index", "Categories")" class="nk-menu-link">
+                                    <span class="nk-menu-text">Category</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a asp-controller="food" asp-action="index" asp-area="admin" class="nk-menu-link">
+                                    <span class="nk-menu-text">Food</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="@Url.Action("Index", "Menu")" class="nk-menu-link">
+                                    <span class="nk-menu-text">Menu</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="html/components/misc/nioicon.html" class="nk-menu-link">
+                                    <span class="nk-menu-text">Cart</span>
+                                </a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="@Url.Action("Index", "UserAddress")" class="nk-menu-link">
+                                    <span class="nk-menu-text">User Address</span>
+                                </a>
+                            </li>
+                        </ul><!-- .nk-menu-sub -->
+                    </li><!-- .nk-menu-item -->
+                    <li class="nk-menu-item">
+                        <a href="html/components/misc/icons.html" class="nk-menu-link">
+                            <span class="nk-menu-icon"><em class="icon ni ni-menu-circled"></em></span>
+                            <span class="nk-menu-text">Icon Libraries</span>
+                        </a>
+                    </li>
+                </ul><!-- .nk-menu -->
+            </div><!-- .nk-sidebar-menu -->
+        </div><!-- .nk-sidebar-content -->
+    </div><!-- .nk-sidebar-element -->
+</div>

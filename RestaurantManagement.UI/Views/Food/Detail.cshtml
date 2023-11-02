@@ -1,0 +1,94 @@
+﻿@using RestaurantManagement.UI.Areas.Admin.Models;
+@model RestaurantManagement.UI.Areas.Admin.Models.FoodModel
+
+<style>
+    .img-food{
+        max-height: 494px;
+        max-width: 395px;
+
+    }
+</style>
+<section class=" featured-dishes-product-detail-img">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-6">
+                <div class="featured-dishes product-detail-img">
+                    <div class="sale">
+                        <h6>Sale</h6>
+                    </div>
+                    <div class="featured-dishes-img">
+                        <img alt="featured-dishes" src="~/images/food/@(Model.Id).png" class="img-food" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="available">
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        available
+                    </span>
+                    <ul class="star">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <h6>( 1 Review )</h6>
+                </div>
+                <div class="product-info ">
+                    <h3>@Model.Name</h3>
+                    <form class="variations_form">
+                        <div class="deal-week mb-4 d-flex align-items-center"><h2 class="m-0"><span>$</span>@Model.Price</h2></div>
+                        <h5>What’s Included</h5>
+                        <p>@Model.Description</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <input type="number" class="input-text me-4" step="1" min="1" name="quantity" value="1">
+                            <button class="button">Add to Cart</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gap no-top">
+    <div class="container">
+        <div class="review">
+            <h3>Review</h3>
+            
+                @{
+                    var comments = (IEnumerable<CommentModel>)ViewBag.Comment;
+
+                    foreach(var cmt in comments)
+                    {
+                            <div class="single-comment">
+                            <div class="ps-md-4">
+                                <div class="d-flex align-items-center">
+                                    <h4>@(cmt.UserName)</h4>
+                                    <span>@(cmt.CreatedOn)</span>
+                                </div>
+                                <p>@(cmt.Content)</p>
+                            </div>
+                        </div>
+
+                    }
+
+                
+
+                }
+            
+            <form class="add-review leave-comment">
+                <div class="rating">
+                    <h3>Add Review</h3>
+                </div>
+                <div class="row">
+                    <textarea placeholder="Add Review"></textarea>
+                    <button class="button">
+                        <span>Post Review</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

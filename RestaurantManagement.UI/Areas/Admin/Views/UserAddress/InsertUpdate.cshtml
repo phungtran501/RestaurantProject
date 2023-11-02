@@ -1,0 +1,94 @@
+﻿@model RestaurantManagement.UI.Areas.Admin.Models.UserAddressViewModel
+
+@{
+    ViewData["Title"] = "InsertUpdate";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="nk-content-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nk-block nk-block-lg">
+                <div class="nk-block-head">
+                    <div class="nk-block-head-content">
+                        <h4 class="title nk-block-title">Account Form</h4>
+                    </div>
+                </div>
+                <div class="card card-bordered card-preview">
+                    <div class="card-inner">
+                        <div class="preview-block">
+                            <span class="text-danger">@(ViewBag.Error is not null ? ViewBag.Error : "")</span>
+                            <div class="row gy-4">
+                                <form asp-controller="UserAddress" asp-action="InsertUpdate" asp-antiforgery="true" method="post"
+                                      class="form-validate is-alter" autocomplete="off" enctype="multipart/form-data">
+                                    <input type="hidden" asp-for="Id" />
+                                    <div class="col-sm-6 form-list-account">
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Username</label>
+                                            <div class="form-control-wrap">
+                                                @Html.DropDownListFor(x => x.UserId, (IEnumerable<SelectListItem>) ViewBag.User,
+                                                "Choose a username", new {@class="form-control"})
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Phone Number</label>
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" asp-for="Phone" placeholder="Input placeholder">
+                                                <span asp-validation-for="Phone" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Fullname</label>
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" asp-for="Fullname" placeholder="Input placeholder">
+                                                <span asp-validation-for="Fullname" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="default-01">Address</label>
+                                            <div class="form-control-wrap">
+                                                <input type="text" class="form-control" asp-for="Address" placeholder="Input placeholder">
+                                                <span asp-validation-for="Address" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-3 col-sm-6">
+                                                <label class="form-label" for="default-01">Is Active</label>
+                                                <div class="form-control-wrap">
+                                                    <div class="preview-block">
+                                                        <div class="custom-control custom-switch">
+                                                            <input type="checkbox" checked class="custom-control-input" asp-for="IsActive">
+                                                            <label class="custom-control-label" for="IsActive"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row gy-2">
+                                            <div class="col-md-6 col-sm-6 btt-center">
+                                                <button type="submit" class="btn btn-outline-primary">Submit</button> &nbsp;
+                                                <a href="@Url.Action("Index", "useraddress")" title="Cancle" class="btn btn-outline-primary">Cancle</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}
+
+
+
+
+

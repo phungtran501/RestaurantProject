@@ -1,0 +1,17 @@
+F:\RestaurantManagement\RestaurantManagement.Data\bin\Debug\net6.0\RestaurantManagement.Data.deps.json
+F:\RestaurantManagement\RestaurantManagement.Data\bin\Debug\net6.0\RestaurantManagement.Data.runtimeconfig.json
+F:\RestaurantManagement\RestaurantManagement.Data\bin\Debug\net6.0\RestaurantManagement.Data.dll
+F:\RestaurantManagement\RestaurantManagement.Data\bin\Debug\net6.0\RestaurantManagement.Data.pdb
+F:\RestaurantManagement\RestaurantManagement.Data\bin\Debug\net6.0\RestaurantManagement.Domain.dll
+F:\RestaurantManagement\RestaurantManagement.Data\bin\Debug\net6.0\RestaurantManagement.Domain.pdb
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.csproj.AssemblyReference.cache
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.AssemblyInfoInputs.cache
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.AssemblyInfo.cs
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.csproj.CoreCompileInputs.cache
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.csproj.CopyComplete
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.dll
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\refint\RestaurantManagement.Data.dll
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.pdb
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\RestaurantManagement.Data.genruntimeconfig.cache
+F:\RestaurantManagement\RestaurantManagement.Data\obj\Debug\net6.0\ref\RestaurantManagement.Data.dll

@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="nk-block nk-block-lg">
+    <div class="nk-block-head">
+        <div class="nk-block-head-content">
+            <h4 class="nk-block-title">Food List</h4>
+        </div>
+    </div>
+    <div class="card card-bordered card-preview">
+        <div class="card-inner">
+            <table class="table" id="tbl-food" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th><a href="/admin/food/insertupdate" title="Add new"><span class="ti-plus"></span></a></th>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Available</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/lib/datatables/jquery.datatables.min.js"></script>
+    <script src="~/lib/datatables/datatables.bootstrap5.min.js"></script>
+    <script src="~/lib/datatables/initialdatatable.js"></script>
+
+    <script>
+
+        const columns = [
+            { "data": "id", "name": "id", "width": "100px" },
+            { "data": "foodName", "name": "foodName", "autowidth": true },
+            { "data": "categoryName", "name": "categoryName", "autowidth": true },
+            { "data": "description", "name": "description", "autowidth": true },
+            { "data": "price", "name": "price", "autowidth": true },
+            { "data": "available", "name": "available", "autowidth": true }
+        ];
+
+        const config = {
+            elementName: '#tbl-food',
+            url: '/admin/food/getdatafood',
+            columns: columns
+        };
+
+        initialDatatable(config);
+
+        $(document).on('click', '.btn-delete', function (event) {
+
+            event.preventDefault();
+
+            const key = $(this).closest('span').data('key');
+
+            confirmJQ('Confirm', 'Are you sure to delete?', function () {
+
+                $.ajax({
+                    url: `/admin/food/delete?key=${key}`,
+                    method: 'DELETE',
+                    dataType: 'json',
+                    success: function (response) {
+                        var toaster = new toasterNaranja('Confirm', 'Delete successful');
+                        toaster.log('Confirm', 'Delete successful');
+                        $('#tbl-food').DataTable().ajax.reload();
+
+                    },
+                    error: function (error) {
+
+                    }
+
+                });
+
+
+            }, function () {
+
+            })
+        });
+
+    </script>
+}
+
+

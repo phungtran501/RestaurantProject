@@ -1,0 +1,86 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="nk-block nk-block-lg">
+    <div class="nk-block-head">
+        <div class="nk-block-head-content">
+            <h4 class="nk-block-title">User Address List</h4>
+        </div>
+    </div>
+    <div class="card card-bordered card-preview">
+        <div class="card-inner">
+            <table class="table" id="tbl-user-address" style="width: 100%">
+                <thead>
+                    <tr>
+                        <th><a href="~/admin/useraddress/insertupdate" title="Add new"><span class="ti-plus"></span></a></th>
+                        <th>User Name</th>
+                        <th>Full Name</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/lib/datatables/jquery.datatables.min.js"></script>
+    <script src="~/lib/datatables/datatables.bootstrap5.min.js"></script>
+    <script src="~/lib/datatables/initialdatatable.js"></script>
+
+     <script>
+
+        const columns = [
+            { "data": "id", "name": "id", "autoWidth": true, "width": "100px" },
+            { "data": "userName", "name": "userName", "autoWidth": true, "width": "150px" },
+            { "data": "fullname", "name": "fullname", "autoWidth": true, "width": "180px" },
+            { "data": "address", "name": "address", "autoWidth": true },
+            { "data": "phone", "name": "phone", "autoWidth": true },
+        ];
+
+        const config = {
+            elementName: '#tbl-user-address',
+            url: '/admin/useraddress/GetDataAccount',
+            columns: columns
+        };
+
+        initialDatatable(config);
+
+        $(document).on('click', '.btn-delete', function (event) {
+
+            event.preventDefault();
+
+            const key = $(this).closest('span').data('key');
+
+            confirmJQ('Confirm', 'Are you sure to delete?', function () {
+
+                $.ajax({
+                    url: `/admin/useraddress/delete?key=${key}`,
+                    method: 'DELETE',
+                    dataType: 'json',
+                    success: function (response) {
+                        var toaster = new toasterNaranja('Confirm', 'Delete successful');
+                        toaster.log('Confirm', 'Delete successful');
+                        $('#tbl-account').DataTable().ajax.reload();
+                    },
+                    error: function (error) {
+
+                    }
+
+                });
+
+
+            }, function () {
+
+            })
+        });
+
+    </script>
+}
+
+
+
