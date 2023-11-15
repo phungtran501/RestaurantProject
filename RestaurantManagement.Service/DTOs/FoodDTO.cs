@@ -22,5 +22,6 @@ namespace RestaurantManagement.Service.DTOs
         public bool IsActive { get; set; }
 
         public string CategoryName { get; set; }
+        public string Code { get; set; }
     }
 }

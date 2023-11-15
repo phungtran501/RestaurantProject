@@ -101,7 +101,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap');
 
 body {
-    font-family: 'Fredoka One';
+    font-family: 'Bookman';
     overflow-x: hidden;
 }
 p
@@ -306,7 +306,6 @@ figure {
 }
 .donation:before {
     background-color: #ffd40d;
-    content: "1";
     color: #000;
     width: 20px;
     height: 20px;
@@ -339,7 +338,6 @@ figure {
     -webkit-box-shadow: 2px 3px 35px 0px rgb(0 0 0 / 10%);
 }
 .cart-popup:before {
-    content: "";
     width: 41%;
     height: 5px;
     position: absolute;
@@ -4284,4 +4282,7 @@ button.swal-button.swal-button--confirm {
 }
 .swal-button:focus {
     box-shadow: none;
+}
+.login-register-left{
+    margin-left: 1090px;
 }

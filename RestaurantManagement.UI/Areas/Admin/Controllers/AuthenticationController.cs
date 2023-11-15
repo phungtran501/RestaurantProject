@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RestaurantManagement.Domain.Entities;
-using RestaurantManagement.Service;
 using RestaurantManagement.UI.Areas.Admin.Models;
-using RestaurantManagement.UI.wwwroot.admin.Utility;
+
 
 namespace RestaurantManagement.UI.Areas.Admin.Controllers
 {
@@ -49,7 +49,6 @@ namespace RestaurantManagement.UI.Areas.Admin.Controllers
         public async Task<IActionResult> Logout()
         {
             HttpContext.Session.Clear();
-            HttpContext.Session.Remove(SessionHelper.SessionName);
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login", "Authentication");
         }

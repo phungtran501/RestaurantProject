@@ -11,7 +11,7 @@
             success: function (response) {
 
                 let li = '';
-
+                
                 $('#category-title').text(name);
 
                 if (!response?.length) {
@@ -23,10 +23,11 @@
                 response.forEach((food, index) => {
                     li += `<li>
                                 <div>
-                                     <h6>${food.name}</h6>
+                                     <a href="/food/detail?code=${food.code}"><h6>${food.name}</h6></a>
                                      <p>${food.description}</p>
                                 </div >
                                 <span>${food.price}$</span>
+                                
                               </li>`;
                 })
 

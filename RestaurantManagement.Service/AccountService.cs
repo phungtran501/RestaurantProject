@@ -1,12 +1,8 @@
 ﻿using Dapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
-using RestaurantManagement.Data;
 using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Enums;
@@ -14,12 +10,8 @@ using RestaurantManagement.Domain.Helper;
 using RestaurantManagement.Service.Abstracts;
 using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.UI.Areas.Admin.Models;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RestaurantManagement.Service
 {
@@ -230,6 +222,77 @@ namespace RestaurantManagement.Service
             IQueryable<ApplicationUser> user = _userManager.Users.Where(x => x.IsActive);
 
             var result = user.Select(x => new SelectListItem
+            {
+                Value = x.Id,
+                Text = x.UserName,
+
+            });
+
+            return result;
+        }
+
+        public async Task<ResponseModel> RegisterUser(RegisterModel registerModel)
+        {
+            if(registerModel != null)
+            {
+                
+                var user = new ApplicationUser
+                {
+                    UserName = registerModel.Username,
+                    Fullname = registerModel.Fullname,
+                    IsActive = true,
+                    IsSystem = false,
+                    EmailConfirmed = true,
+                    PhoneNumberConfirmed = true,
+                    TwoFactorEnabled = true,
+                    LockoutEnabled = true,
+                    AccessFailedCount = 0
+                };
+
+                var result = await _userManager.CreateAsync(user, registerModel.Password);
+
+                if (result.Succeeded)
+                {
+                    var role = await _userManager.AddToRoleAsync(user, "Customer");
+
+                    return new ResponseModel
+                    {
+                        Status = true,
+                        Message = "Register successful",
+                        StatusType = StatusType.Success,
+                    };
+                }
+                else
+                {
+
+                    var errors = result.Errors.ToList().Select(x => x.Description);
+                    return new ResponseModel
+                    {
+                        Status = false,
+                        Message = string.Join(';', errors),
+                        StatusType = StatusType.Fail,
+                    };
+                }
+            }
+            else
+            {
+
+                return new ResponseModel
+                {
+                    Status = false,
+                    Message = "Register failed",
+                    StatusType = StatusType.Fail,
+                };
+            }
+
+            
+        }
+
+        public IEnumerable<SelectListItem> GetUsers()
+        {
+            var users = _userManager.Users.Where(x => x.IsActive && !x.IsSystem).ToList();
+
+            var result = users.Select(x => new SelectListItem
             {
                 Value = x.Id,
                 Text = x.UserName,

@@ -1,19 +1,17 @@
 ﻿using Dapper;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Enums;
 using RestaurantManagement.Domain.Helper;
 using RestaurantManagement.Service.Abstracts;
 using RestaurantManagement.Service.DTOs;
+using RestaurantManagement.Service.DTOs.Cart;
 using RestaurantManagement.UI.Areas.Admin.Models;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RestaurantManagement.Service
 {
@@ -59,13 +57,13 @@ namespace RestaurantManagement.Service
                 x.CategoryName
 
 
-            }).ToArray();
+            }).OrderBy(x => x.FoodName).ToArray();
 
             responseDatatable = new ResponseDatatable
             {
                 Draw = requestDatatable.Draw,
                 RecordsTotal = foods.Count(),
-                RecordsFiltered = result.Count(),
+                RecordsFiltered = foods.Count(),
                 Data = data
             };
 
@@ -152,6 +150,7 @@ namespace RestaurantManagement.Service
                 Name = x.Name,
                 Description = x.Description,
                 Price = x.Price,
+                Code = x.Code
             });
         }
 
@@ -183,10 +182,96 @@ namespace RestaurantManagement.Service
                 Name = x.Name,
                 Price = x.Price,
                 Available = x.Available,
-                Description = x.Description
+                Description = x.Description,
+                Code = x.Code
             }).FirstOrDefault();
 
             return getFood;
+
+        }
+
+        public async Task<IEnumerable<SelectListItem>> GetListFood()
+        {
+            var foods = await _unitOfWork.FoodRepository.GetData(x => x.IsActive);
+
+            var result = foods.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Id.ToString(),
+
+            });
+
+            return result;
+        }
+
+        public async Task<IEnumerable<FoodByMenuDTO>> GetFoodByMenu()
+        {
+            List<FoodByMenuDTO> foodByMenuDTOs = new();
+
+            var lsMenu = (await _unitOfWork.MenuRepository.GetData(x => x.IsDisplay && x.IsActive)).Select(x => new
+            {
+                MenuId = x.Id,
+                Name = x.Name
+            }).ToList();
+
+            var lsFoods = await _unitOfWork.MenuDetailRepository.Table.Join(_unitOfWork.FoodRepository.Table, x => x.FoodId,
+                                                                                          y => y.Id,
+                                                                                          (detail, food) => new
+                                                                                          {
+                                                                                              MenuId = detail.MenuId,
+                                                                                              Price = food.Price,
+                                                                                              FoodName = food.Name,
+                                                                                              Description = food.Description
+                                                                                          }).ToListAsync();
+
+            foreach (var item in lsMenu)
+            {
+                FoodByMenuDTO foodByMenuDTO = new();
+
+
+                foodByMenuDTO.MenuName = item.Name;
+
+                var foods = lsFoods.Where(x => x.MenuId == item.MenuId).Select(x => new MenuFood
+                {
+                    FoodName = x.FoodName,
+                    Price = x.Price,
+                    Description = x.Description
+                }).ToList();
+
+
+                foodByMenuDTO.Foods = foods;
+
+                foodByMenuDTOs.Add(foodByMenuDTO);
+
+            }
+
+            return foodByMenuDTOs;
+        }
+
+        public async Task<IEnumerable<CartItemDTO>> GetItemFood(List<CartModel> cartModels)
+        {
+            List<CartItemDTO> cartItemDTOs = new();
+
+            var foodCodes = cartModels.Select(x => x.Code).ToList();
+
+            var foods = await _unitOfWork.FoodRepository.GetData(x => foodCodes.Contains(x.Code));
+
+            foreach (var item in foods)
+            {
+                var currentFood = cartModels.FirstOrDefault(x => x.Code == item.Code);
+
+                cartItemDTOs.Add(new CartItemDTO
+                {
+                    Name = item.Name,
+                    Description = item.Description,
+                    Code = item.Code,
+                    Id = item.Id,
+                    Price = item.Price,
+                    Quantity = currentFood.Quantity
+                });
+            }
+
+            return cartItemDTOs;
 
         }
     }

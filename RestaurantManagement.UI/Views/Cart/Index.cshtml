@@ -1,0 +1,110 @@
+﻿@using RestaurantManagement.Service.DTOs;
+@using RestaurantManagement.UI.Areas.Admin.Models;
+@using System.Globalization;
+@using RestaurantManagement.Service.DTOs.Cart;
+
+<section>
+    <div class="container">
+        <form class="woocommerce-cart-form">
+            <div style="overflow-x:auto;overflow-y: hidden;">
+                <table class="shop_table table-responsive">
+                    <thead>
+                        <tr>
+                            <th class="product-name">Product</th>
+                            <th class="product-quantity">Quantity</th>
+                            <th class="product-price">Price</th>
+                            <th class="product-subtotal">Total</th>
+                        </tr>
+                    </thead>
+                    @{
+                        CultureInfo culture = new CultureInfo("vi-VN");
+                        var foods = (IEnumerable<CartItemDTO>)ViewBag.Food;
+
+                        if (foods is null)
+                        {
+                            <span>Giỏ hàng trống</span>
+                        }
+                        else
+
+                        {
+                            <tbody id="body-cart">
+                                @foreach (var item in foods)
+                                {
+
+                                    <tr>
+                                        <td class="product-name">
+                                            <img alt="img" height="111" width="111" src="~/images/food/@(item.Id).png" />
+                                            <div>
+                                                <input class="text-code" type="hidden" value="@item.Code" />
+                                                <a href="#">@item.Name</a>
+                                                <span>@item.Description</span>
+                                            </div>
+                                        </td>
+                                        <td class="product-quantity">
+                                            <input type="number" class="input-text quantityInput"  value="@item.Quantity">
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <span><bdi class="sp-price">@(string.Format(culture, "{0:N2}", item.Price)) </bdi> </span>
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <span><bdi class="sp-total">@(string.Format(culture, "{0:N2}", item.Price * item.Quantity))</bdi></span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        }
+                    }
+                    <tfoot>
+                        <tr class="coupon">
+                            <td colspan="4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <button class="update-cart" id="update-cart">Update Cart</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8">
+                    <div class="cart_totals">
+                        <h4>Cart Totals</h4>
+                        <div class="shop_table-boder">
+                            <table class="shop_table_responsive">
+                                <tbody>
+                                    <tr class="Total">
+                                        <th>Total:</th>
+                                        <td>
+                                            <span id="totalPrice">
+
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="wc-proceed-to-checkout">
+                            @if (User.Identity?.IsAuthenticated ?? false)
+                            {
+                                <a href="/CheckOut/Index" class="button">
+                                    <span>Proceed to checkout</span>
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="/Login/Index" class="button">
+                                    <span>Proceed to checkout</span>
+                                </a>
+                            }
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+@section Scripts {
+    <script src="~/site/components/cart.js"></script>
+}

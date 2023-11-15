@@ -1,12 +1,29 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RestaurantManagement.Service.Abstracts;
 
 namespace RestaurantManagement.UI.Controllers
 {
-    public class MenuController : Controller
+    public class MenuController : BaseController
     {
-        public IActionResult Index()
+        private readonly IMenuService _menuService;
+        private readonly IFoodService _foodService;
+
+        public MenuController(IMenuService menuService, IFoodService foodService)
         {
-            return View();
+            _menuService = menuService;
+            _foodService = foodService;
         }
+
+        public async Task<IActionResult> Index()
+        {
+
+
+            var lsMenu = await _foodService.GetFoodByMenu();
+
+            return View(lsMenu);
+        }
+
+
+
     }
 }

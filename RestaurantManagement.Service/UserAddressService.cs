@@ -65,7 +65,7 @@ namespace RestaurantManagement.Service
                 {
                     Draw = requestDatatable.Draw,
                     RecordsTotal = foods.Count(),
-                    RecordsFiltered = result.Count(),
+                    RecordsFiltered = foods.Count(),
                     Data = data
                 };
             }

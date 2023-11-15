@@ -1,6 +1,6 @@
 ﻿@using RestaurantManagement.UI.Areas.Admin.Models;
+@using System.Globalization;
 @model RestaurantManagement.UI.Areas.Admin.Models.FoodModel
-
 <style>
     .img-food{
         max-height: 494px;
@@ -34,18 +34,28 @@
                         <li><i class="fa-solid fa-star"></i></li>
                         <li><i class="fa-solid fa-star"></i></li>
                     </ul>
-                    <h6>( 1 Review )</h6>
+                    @{
+                        CultureInfo culture = new CultureInfo("vi-VN");
+                        var review = (int)ViewData["CountCmt"];
+                        <h6>@review review</h6>
+                    }
                 </div>
                 <div class="product-info ">
                     <h3>@Model.Name</h3>
                     <form class="variations_form">
-                        <div class="deal-week mb-4 d-flex align-items-center"><h2 class="m-0"><span>$</span>@Model.Price</h2></div>
-                        <h5>What’s Included</h5>
+                        <div class="deal-week mb-4 d-flex align-items-center"><h2 class="m-0"><span>
+                                    @(string.Format(culture, "{0:N2}", @Model.Price))
+
+                        <h5>Mô tả</h5>
                         <p>@Model.Description</p>
                         <div class="d-flex align-items-center mt-4">
                             <input type="number" class="input-text me-4" step="1" min="1" name="quantity" value="1">
-                            <button class="button">Add to Cart</button>
-                        </div>
+                            
+                                
+                            <button class="button btn-add-cart" data-key="@(Model.Code)" >Add Cart</button>
+                            
+                            </div>
+
                     </form>
                 </div>
             </div>
@@ -71,16 +81,12 @@
                                 <p>@(cmt.Content)</p>
                             </div>
                         </div>
-
                     }
-
-                
-
                 }
             
             <form class="add-review leave-comment">
                 <div class="rating">
-                    <h3>Add Review</h3>
+                    <h3>Thêm Review</h3>
                 </div>
                 <div class="row">
                     <textarea placeholder="Add Review"></textarea>
@@ -92,3 +98,6 @@
         </div>
     </div>
 </section>
+@section Scripts {
+    <script src="~/site/components/cart.js"></script>
+}

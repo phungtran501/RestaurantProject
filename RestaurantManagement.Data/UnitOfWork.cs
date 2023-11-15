@@ -49,23 +49,12 @@ namespace RestaurantManagement.Data
             await _restaurantManagementContext.SaveChangesAsync();
         }
 
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!disposedValue)
-            {
-                if (disposing)
-                {
-                    _restaurantManagementContext.Dispose();
-                }
-
-                disposedValue = true;
-            }
-        }
-
         public void Dispose()
         {
-            Dispose(disposing: true);
-            GC.SuppressFinalize(this);
+            if(_restaurantManagementContext != null)
+            {
+                _restaurantManagementContext.Dispose();
+            }    
         }
     }
 }

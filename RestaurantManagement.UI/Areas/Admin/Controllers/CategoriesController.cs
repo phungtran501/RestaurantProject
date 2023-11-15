@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RestaurantManagement.Data.Abstract;
-using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Enums;
 using RestaurantManagement.Service.Abstracts;
 using RestaurantManagement.UI.Areas.Admin.Models;

@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using RestaurantManagement.Data.Abstract;
+﻿using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Enums;
 using RestaurantManagement.Service.Abstracts;
 using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.UI.Areas.Admin.Models;
+
 
 namespace RestaurantManagement.Service
 {
@@ -39,7 +39,8 @@ namespace RestaurantManagement.Service
             var data = result.Select(x => new
             {
                 Id = ActionDatatable(x.Id),
-                x.Name
+                x.Name,
+                IsDisplay = $"<input type='checkbox' class='ck-display' {(x.IsDisplay ? "checked" : "" )}></input>",
             }).ToArray();
 
             responseDatatable = new ResponseDatatable
@@ -59,8 +60,8 @@ namespace RestaurantManagement.Service
         {
             string delete = "<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>";
             string edit = $"<a href=\"/admin/menu/insertupdate?id={id}\" title='edit'><span class=\"ti-pencil\"></span></a>";
-
-            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}</span>";
+            string add = $"<a href=\"/admin/menudetail/insertupdate?id={id}\" title='Add food' class='btn-add'><span class=\"ti-plus\"></span></a>";
+            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}&nbsp;{add}</span>";
         }
 
         public async Task<ResponseModel> CreateUpdate(MenuViewModel menuViewModel)
@@ -114,5 +115,22 @@ namespace RestaurantManagement.Service
             _unitOfWork.MenuRepository.Update(menu);
             await _unitOfWork.MenuRepository.Commit();
         }
+
+        public async Task UpdateDisplayMenu(UpdateDisplayDTO updateDisplayDTO)
+        {
+
+                var menu = await _unitOfWork.MenuRepository.GetById(updateDisplayDTO.key);
+
+                menu.IsDisplay = updateDisplayDTO.IsDisplay;
+
+                _unitOfWork.MenuRepository.Update(menu);
+
+                await _unitOfWork.MenuRepository.Commit();
+
+            
+
+        }
+
+
     }
 }

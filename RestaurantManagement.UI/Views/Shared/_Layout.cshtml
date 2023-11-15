@@ -1,22 +1,24 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="zxx">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodio - login</title>
+    <title>Foodio</title>
     <link rel="icon" href="~/site/assets/img/logo-icon.png">
     <link rel="stylesheet" type="text/css" href="~/site/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/site/assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="~/site/assets/css/style.css">
     <link rel="stylesheet" href="~/site/assets/css/responsive.css">
     <link rel="stylesheet" href="~/site/assets/css/color.css">
+    <link href="~/lib/toaster/naranja.min.css" rel="stylesheet" />
     <link href="~/site/assets/css/main.css" rel="stylesheet" />
     <script src="~/site/assets/js/jquery-3.6.0.min.js"></script>
     <script src="~/site/assets/js/preloader.js"></script>
 </head>
 <body>
     <!-- end preloader -->
-    @await Html.PartialAsync("~/Views/Shared/Header.cshtml")
+    <partial name="~/Views/Shared/_Header.cshtml" />
     <section class="gap">
         <div class="container">
             @RenderBody()
@@ -36,5 +38,6 @@
     </div>
     <!-- fancybox -->
     <script src="~/site/assets/js/custom.js"></script>
+    <script src="~/lib/toaster/naranja.min.js"></script>
     @RenderSection("Scripts", required: false)
 </body>

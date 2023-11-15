@@ -104,7 +104,6 @@
 
             .naranja-notification .naranja-body-notification .naranja-text-and-title > p {
                 margin: 5px;
-                font-family: 'Open Sans'
             }
 
             .naranja-notification .naranja-body-notification .naranja-text-and-title > div {
@@ -185,7 +184,8 @@
     max-height: 100vh;
     overflow: auto;
     padding: 8px;
-    padding-top: 20px
+    padding-top: 20px;
+    z-index: 9999;
 }
 
     .naranja-notification-box .naranja-notification-advice {

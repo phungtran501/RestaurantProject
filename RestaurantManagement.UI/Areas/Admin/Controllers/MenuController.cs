@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Enums;
 using RestaurantManagement.Service.Abstracts;
@@ -13,14 +14,30 @@ namespace RestaurantManagement.UI.Areas.Admin.Controllers
     {
         private readonly IMenuService _menuService;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IFoodService _foodService;
+        private readonly IMenuDetailService _menuDetailService;
 
-        public MenuController(IMenuService menuService, IUnitOfWork unitOfWork)
+        public MenuController(IMenuService menuService, 
+                                IUnitOfWork unitOfWork,
+                                IFoodService foodService,
+                                IMenuDetailService menuDetailService)
         {
             _menuService = menuService;
             _unitOfWork = unitOfWork;
+            _foodService = foodService;
+            _menuDetailService = menuDetailService;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var foods = await _unitOfWork.FoodRepository.GetData(x => x.IsActive);
+
+            ViewBag.Foods = foods.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Id.ToString(),
+
+            });
+
             return View();
         }
 
@@ -80,6 +97,37 @@ namespace RestaurantManagement.UI.Areas.Admin.Controllers
         public async Task<IActionResult> Delete(int key)
         {
             await _menuService.DeleteMenu(key);
+            return Json(true);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateDisplay(UpdateDisplayDTO updateDisplayDTO)
+        {
+
+            await _menuService.UpdateDisplayMenu(updateDisplayDTO);
+
+            return Json(true);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> GetFoodByMenu(int id)
+        {
+            var foods = await _menuDetailService.GetFoodByMenu(id);
+            return Json(foods);
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteMenuDetail(int key)
+        {
+            await _menuDetailService.DeleteMenuDetail(key);
+            return Json(true);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> InsertMenuDetail([FromBody]List<MenuDetailModel> menuDetailModels)
+        {
+            await _menuDetailService.InsertUpdate(menuDetailModels);
+
             return Json(true);
         }
     }

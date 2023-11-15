@@ -42967,4 +42967,8 @@ body.dark-mode.nk-body.ui-softy, body.dark-mode.nk-body.ui-shady {
   border-color: #6576ff !important;
 }
 
+.padding-row-add{
+    padding-top: 15px;
+}
+
 /*! END @iO */

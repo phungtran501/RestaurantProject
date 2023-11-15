@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using RestaurantManagement.Domain.Entities;
-using System.ComponentModel.DataAnnotations;
-using System.Security.Policy;
-using System.Xml.Linq;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace RestaurantManagement.UI.Areas.Admin.Models
 {

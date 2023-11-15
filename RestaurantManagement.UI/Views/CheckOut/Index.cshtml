@@ -1,0 +1,71 @@
+﻿@model RestaurantManagement.Service.DTOs.Cart.CartCheckOutDTO
+
+<section>
+    <div class="container">
+        <form class="checkout-meta donate-page" asp-controller="checkout" asp-action="CartCheckOut" asp-antiforgery="true" method="post" autocomplete="off">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="pb-3">Billing details</h3>
+                    <div class="col-lg-12">
+                        <input autocomplete="off" type="text" asp-for="Fullname" class="input-text" placeholder="Complete Name">
+                        <span asp-validation-for="Fullname" class="text-danger"></span>
+                        <input autocomplete="off" type="text" asp-for="Phone" class="input-text " placeholder="Phone Number">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                        <input autocomplete="off" type="text" asp-for="Address" placeholder="Address">
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                    <div class="woocommerce-additional-fields">
+                        <input autocomplete="off" type="text" class="input-text " asp-for="Note" placeholder="Order Note">
+                        <span asp-validation-for="Note" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart_totals-checkout" style="background-image: url(/site/assets/img/patron.jpg)">
+                        <div class="cart_totals cart-Total">
+                            <h4>Cart Total</h4>
+                            <table class="shop_table_responsive">
+                                <tbody>
+                                    <tr class="cart-subtotal">
+                                        <th>Subtotal:</th>
+                                        <td>
+                                            <span class="woocommerce-Price-amount">
+                                                <bdi>
+                                                    <span class="woocommerce-Price-currencySymbol">$</span>358.00
+                                                </bdi>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="Shipping">
+                                        <th>Shipping:</th>
+                                        <td>
+                                            <span class="woocommerce-Price-amount amount">
+                                                free
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="Total">
+                                        <th>Total:</th>
+                                        <td>
+                                            <span class="woocommerce-Price-amount">
+                                                @{
+                                                    <bdi>
+                                                        <span>$</span>@ViewData["totalCart"]
+                                                    </bdi>
+                                                }
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="checkout-side">
+                            </br>
+                            <button type="submit" class="button"><span>Place Order</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+

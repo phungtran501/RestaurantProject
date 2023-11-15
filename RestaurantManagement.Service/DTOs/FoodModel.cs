@@ -18,7 +18,7 @@ namespace RestaurantManagement.UI.Areas.Admin.Models
         public bool IsActive { get; set; }
         [Required]
         public int CategoryId { get; set; }
-        public string Code { get; set; }
+        public string? Code { get; set; }
 
     }
 }

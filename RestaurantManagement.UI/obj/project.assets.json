@@ -12488,11 +12488,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\RestaurantManagement\\RestaurantManagement.UI\\RestaurantManagement.UI.csproj",
+      "projectUniqueName": "F:\\RestaurantProject\\RestaurantManagement.UI\\RestaurantManagement.UI.csproj",
       "projectName": "RestaurantManagement.UI",
-      "projectPath": "F:\\RestaurantManagement\\RestaurantManagement.UI\\RestaurantManagement.UI.csproj",
+      "projectPath": "F:\\RestaurantProject\\RestaurantManagement.UI\\RestaurantManagement.UI.csproj",
       "packagesPath": "C:\\Users\\JINLONG_PC\\.nuget\\packages\\",
-      "outputPath": "F:\\RestaurantManagement\\RestaurantManagement.UI\\obj\\",
+      "outputPath": "F:\\RestaurantProject\\RestaurantManagement.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JINLONG_PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12510,8 +12510,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\RestaurantManagement\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj": {
-              "projectPath": "F:\\RestaurantManagement\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj"
+            "F:\\RestaurantProject\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj": {
+              "projectPath": "F:\\RestaurantProject\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj"
             }
           }
         }

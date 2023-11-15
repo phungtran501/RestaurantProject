@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.UI.Areas.Admin.Models;
 
@@ -12,5 +11,7 @@ namespace RestaurantManagement.Service.Abstracts
         Task DeleteUser(string key);
         Task<AccountViewModel> GetInfomationUser(string userId);
         IEnumerable<SelectListItem> GetUser();
+        Task<ResponseModel> RegisterUser(RegisterModel registerModel);
+        IEnumerable<SelectListItem> GetUsers();
     }
 }

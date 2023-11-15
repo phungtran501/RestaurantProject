@@ -49,25 +49,5 @@
         })
     });
 
-    $(document).on('click', '.btn-show', function (e) {
 
-        e.preventDefault();
-
-        $('#accountModal').modal('show');
-
-        //$.ajax({
-        //    url: `/admin/account/get-infomation-user/${key}`,
-        //    method: 'GET',
-        //    success: function (response) {
-
-
-
-
-        //    }
-
-
-
-
-        //});
-    });
 })()

@@ -1,50 +1,27 @@
 ﻿using Newtonsoft.Json;
-using RestaurantManagement.Domain.Entities;
-using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.UI.wwwroot.admin.Utility
 {
-    public class SessionHelper
+    public static class SessionHelper
     {
-        public static string SessionName = "UserLoginSession";
-        private readonly HttpContext _httpContextAccessor;
-
-        public SessionHelper(HttpContext httpContextAccessor)
+        /// <summary>
+        /// create a session to save data
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="session"></param>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        public static void Set<T>(this ISession session, string key, T value) //extension method
         {
-            _httpContextAccessor = httpContextAccessor;
-        }
-        public ApplicationUser GetSessionInfoLogin
-        {
-            get
-            {
-                ApplicationUser user = new();
-
-                if (_httpContextAccessor.User.Identity.IsAuthenticated)
-                {
-                    if(_httpContextAccessor.Session.GetString(SessionName) != null)
-                    {
-                        var session = _httpContextAccessor.Session.GetString(SessionName);
-
-                        var md = JsonConvert.DeserializeObject<ApplicationUser>(session);
-
-                        return md;
-                    }
-                }
-
-                return user;
-            }
+            session.SetString(key, JsonConvert.SerializeObject(value));
         }
 
-        public void CreateSession(ApplicationUser applicationUser)
+        //session['_Time'] = DatTime.Now;
+
+        public static T? Get<T>(this ISession session, string key) //_Time
         {
-            if (_httpContextAccessor.Session.GetString(SessionName) == null)
-            {
-                string mdLogin = JsonConvert.SerializeObject(applicationUser);
-
-                _httpContextAccessor.Session.SetString(SessionName, mdLogin);
-            }
+            var value = session.GetString(key);
+            return value == null ? default : JsonConvert.DeserializeObject<T>(value);
         }
-
-
     }
 }

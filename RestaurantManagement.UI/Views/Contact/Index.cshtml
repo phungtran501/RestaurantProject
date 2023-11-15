@@ -1,4 +1,6 @@
-﻿<section>
+﻿@model RestaurantManagement.Domain.Model.EmailRequest
+
+<section>
     <div class="container">
         <div class="row">
             <div class="col-xl-6">
@@ -41,11 +43,16 @@
                     <p>For all enquires, please contact us and one of our delightful team will be be happy to help.</p>
                 </div>
 
-                <form role="form" id="contact-form" method="post" class="add-review leave-comment mt-4">
-                    <input type="text" name="complete_name" id="Complete_Name" placeholder="Full Name" required>
-                    <input type="text" name="email_address" placeholder="Email Address" id="email_address" required>
-                    <input type="text" name="phone" placeholder="Phone No">
-                    <textarea placeholder="Message" name="message"></textarea>
+                <form asp-controller="contact" asp-action="Contact" asp-antiforgery="true" method="post"
+                      role="form" method="post" class="add-review leave-comment mt-4" autocomplete="off" enctype="multipart/form-data">
+                    @*<input type="text" asp-for="FullName" placeholder="Full Name" required>
+                    <span asp-validation-for="FullName" class="text-danger"></span>*@
+                    <input type="text" asp-for="EmailCustomer" placeholder="Email Address" required>
+                    <span asp-validation-for="EmailCustomer" class="text-danger"></span>
+                    @*<input type="text" asp-for="PhoneNumber" placeholder="Phone No">
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>*@
+                    <input textarea placeholder="Message" asp-for="Content" ></textarea>
+                    <span asp-validation-for="Content" class="text-danger"></span>
                     <button class="button" type="submit" value="submit">
                         <span>send Message</span>
                     </button>

@@ -8,5 +8,6 @@ namespace RestaurantManagement.Service.Abstracts
         Task<ResponseModel> CreateUpdate(MenuViewModel menuViewModel);
         Task DeleteMenu(int key);
         Task<ResponseDatatable> GetAllMenus(RequestDatatable requestDatatable);
+        Task UpdateDisplayMenu(UpdateDisplayDTO updateDisplayDTO);
     }
 }

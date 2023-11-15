@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RestaurantManagement.Data;
 using RestaurantManagement.Data.Abstract;
+using RestaurantManagement.Domain.Configuration;
 using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Helper;
 using RestaurantManagement.Service;
@@ -14,10 +15,10 @@ namespace RestaurantManagement.Infrastructure.Configuration
 {
     public static class ConfigurationServer
     {
-        public static void RegisterContextDb(this IServiceCollection service, IConfiguration configaration)
+        public static void RegisterContextDb(this IServiceCollection service, IConfiguration configuration)
         {
             service.AddDbContext<RestaurantManagementContext>(options => options
-            .UseSqlServer(configaration.GetConnectionString("RestaurantDB"),
+            .UseSqlServer(configuration.GetConnectionString("RestaurantDB"),
             options => options.MigrationsAssembly(typeof(RestaurantManagementContext).Assembly.FullName)));
 
             service.AddIdentity<ApplicationUser, IdentityRole>(config =>
@@ -32,8 +33,10 @@ namespace RestaurantManagement.Infrastructure.Configuration
 
         //extension method
         //register dependency injection
-        public static void RegisterDI(this IServiceCollection service)
+        public static void RegisterDI(this IServiceCollection service, IConfiguration configuration)
         {
+            service.Configure<EmailConfig>(configuration.GetSection("MailSettings"));
+
             service.AddTransient<PasswordHasher<ApplicationUser>>();
             service.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             service.AddTransient<IUnitOfWork, UnitOfWork>();
@@ -48,6 +51,9 @@ namespace RestaurantManagement.Infrastructure.Configuration
             service.AddTransient<IMenuService, MenuService>();
             service.AddTransient<IUserAddressService, UserAddressService>();
             service.AddTransient<ICommentService, CommentService>();
+            service.AddTransient<IMenuDetailService, MenuDetailService>();
+            service.AddTransient<IEmailHelper, EmailHelper>();
+            service.AddTransient<ICartService, CartService>();
             
 
 

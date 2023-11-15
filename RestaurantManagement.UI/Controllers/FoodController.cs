@@ -4,7 +4,7 @@ using RestaurantManagement.Service.Abstracts;
 
 namespace RestaurantManagement.UI.Controllers
 {
-    public class FoodController : Controller
+    public class FoodController : BaseController
     {
         private readonly IFoodService _foodService;
         private readonly ICommentService _commentService;
@@ -31,6 +31,10 @@ namespace RestaurantManagement.UI.Controllers
             var food = await _foodService.GetFoodDetail(code);
 
             var comments = await _commentService.GetCommentByFoodId(food.Id ?? 0);
+
+            var count = comments is null ? 0 : comments.Count();
+
+            ViewData["CountCmt"] = count;
 
             ViewBag.Comment = comments;
             

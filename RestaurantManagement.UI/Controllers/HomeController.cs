@@ -1,17 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using RestaurantManagement.Data.Abstract;
-using RestaurantManagement.Domain.Entities;
-using RestaurantManagement.Service;
 using RestaurantManagement.Service.Abstracts;
-using RestaurantManagement.UI.Areas.Admin.Models;
 using RestaurantManagement.UI.Models;
+using RestaurantManagement.UI.wwwroot.admin.Utility;
 using System.Diagnostics;
-using System.Linq;
 
 namespace RestaurantManagement.UI.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ICategoriesService _categoriesService;

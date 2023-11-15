@@ -585,11 +585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\RestaurantManagement\\RestaurantManagement.Domain\\RestaurantManagement.Domain.csproj",
+      "projectUniqueName": "F:\\RestaurantProject\\RestaurantManagement.Domain\\RestaurantManagement.Domain.csproj",
       "projectName": "RestaurantManagement.Domain",
-      "projectPath": "F:\\RestaurantManagement\\RestaurantManagement.Domain\\RestaurantManagement.Domain.csproj",
+      "projectPath": "F:\\RestaurantProject\\RestaurantManagement.Domain\\RestaurantManagement.Domain.csproj",
       "packagesPath": "C:\\Users\\JINLONG_PC\\.nuget\\packages\\",
-      "outputPath": "F:\\RestaurantManagement\\RestaurantManagement.Domain\\obj\\",
+      "outputPath": "F:\\RestaurantProject\\RestaurantManagement.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JINLONG_PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

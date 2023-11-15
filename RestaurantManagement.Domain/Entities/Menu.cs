@@ -7,5 +7,7 @@ namespace RestaurantManagement.Domain.Entities
         [StringLength(500)]
         public string Name { get; set; }
         public bool IsActive { get; set; }
+
+        public bool IsDisplay { get; set; }
     }
 }

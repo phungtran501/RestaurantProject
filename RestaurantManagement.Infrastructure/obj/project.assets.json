@@ -8281,11 +8281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\RestaurantManagement\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj",
+      "projectUniqueName": "F:\\RestaurantProject\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj",
       "projectName": "RestaurantManagement.Infrastructure",
-      "projectPath": "F:\\RestaurantManagement\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj",
+      "projectPath": "F:\\RestaurantProject\\RestaurantManagement.Infrastructure\\RestaurantManagement.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\JINLONG_PC\\.nuget\\packages\\",
-      "outputPath": "F:\\RestaurantManagement\\RestaurantManagement.Infrastructure\\obj\\",
+      "outputPath": "F:\\RestaurantProject\\RestaurantManagement.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JINLONG_PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8302,11 +8302,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\RestaurantManagement\\RestaurantManagement.Data\\RestaurantManagement.Data.csproj": {
-              "projectPath": "F:\\RestaurantManagement\\RestaurantManagement.Data\\RestaurantManagement.Data.csproj"
+            "F:\\RestaurantProject\\RestaurantManagement.Data\\RestaurantManagement.Data.csproj": {
+              "projectPath": "F:\\RestaurantProject\\RestaurantManagement.Data\\RestaurantManagement.Data.csproj"
             },
-            "F:\\RestaurantManagement\\RestaurantManagement.Service\\RestaurantManagement.Service.csproj": {
-              "projectPath": "F:\\RestaurantManagement\\RestaurantManagement.Service\\RestaurantManagement.Service.csproj"
+            "F:\\RestaurantProject\\RestaurantManagement.Service\\RestaurantManagement.Service.csproj": {
+              "projectPath": "F:\\RestaurantProject\\RestaurantManagement.Service\\RestaurantManagement.Service.csproj"
             }
           }
         }

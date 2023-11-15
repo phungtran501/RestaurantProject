@@ -1,0 +1,45 @@
+﻿@model IEnumerable<SelectListItem>
+
+<div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <select class="d-none form-control" id="ls-food">
+        
+    @{
+        foreach(var food in Model)
+        {
+            <option value="@food.Value">@food.Text</option>
+        }
+    }
+    </select>
+    <div class="modal-dialog modal-lg">
+        <input type="hidden" id="menu-id" />
+        <div class="modal-content">
+            <div class="modal-header float-right">
+                <h5>List Food</h5>
+                <div class="text-right">
+                    <i data-dismiss="modal" aria-label="Close" class="fa fa-close"></i>
+                </div>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-secondary" id="btn-add-row"><span class="ti-plus"></span></button>
+                <br/>
+                <div>
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">Food</th>
+                                <th scope="col" class="d-none">Price</th>
+                                <th style="width:40px">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-food">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="close-modal" aria-hidden="true">Close</button>
+                <button type="button" class="btn btn-primary" id="btn-submit-food">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

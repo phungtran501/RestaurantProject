@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EGxe6P2fqb7xzwQiV2MswUmzxdnu7FgNFxBHS+0J0f08eJr1K6T0UgcEHnWOUtWRirmzZaJtMo6i3IUJRwoeNQ==",
+  "dgSpecHash": "SWfGWLSsJ6VRur/zX2OeIcTlsltiI7ArJ28MBtJLsgIORt5bWYMjnd2Zs135Q/HNrB+sFBu9vPMQRHpGTx4wsg==",
   "success": true,
-  "projectFilePath": "F:\\RestaurantManagement\\RestaurantManagement.UI\\RestaurantManagement.UI.csproj",
+  "projectFilePath": "F:\\RestaurantProject\\RestaurantManagement.UI\\RestaurantManagement.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JINLONG_PC\\.nuget\\packages\\dapper\\2.0.151\\dapper.2.0.151.nupkg.sha512",
     "C:\\Users\\JINLONG_PC\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

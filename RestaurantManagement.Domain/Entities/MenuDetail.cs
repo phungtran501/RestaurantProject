@@ -20,5 +20,7 @@ namespace RestaurantManagement.Domain.Entities
         public int FoodId { get; set; }
         [ForeignKey(nameof(FoodId))]
         public Food Food { get; set; }
+
+        
     }
 }
