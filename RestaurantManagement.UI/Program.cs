@@ -1,16 +1,9 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using RestaurantManagement.Data;
-using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Infrastructure.Configuration;
-using RestaurantManagement.UI.Helper;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("RestaurantDB") ?? throw new InvalidOperationException("Connection string 'RestaurantManagementContextConnection' not found.");
-
+var connectionString = builder.Configuration.GetConnectionString("RestaurantDB") 
+                ?? throw new InvalidOperationException("Connection string 'RestaurantManagementContextConnection' not found.");
 
 var buiderRazor = builder.Services.AddRazorPages();
 
@@ -47,8 +40,6 @@ var app = builder.Build();
 
 app.SeedData(builder.Configuration).GetAwaiter().GetResult();
 
-
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -61,8 +52,6 @@ else
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
-
 
 app.UseHttpsRedirection();
 

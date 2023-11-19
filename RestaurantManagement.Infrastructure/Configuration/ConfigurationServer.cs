@@ -41,6 +41,7 @@ namespace RestaurantManagement.Infrastructure.Configuration
             service.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             service.AddTransient<IUnitOfWork, UnitOfWork>();
             service.AddTransient<IDapperHelper, DapperHelper>();
+            service.AddTransient<IEmailHelper, EmailHelper>();
             service.AddTransient<IImageHandler, ImageHandler>();
             service.AddTransient<IUserService, UserService>();
             service.AddTransient<IAccountService, AccountService>();
@@ -51,12 +52,7 @@ namespace RestaurantManagement.Infrastructure.Configuration
             service.AddTransient<IUserAddressService, UserAddressService>();
             service.AddTransient<ICommentService, CommentService>();
             service.AddTransient<IMenuDetailService, MenuDetailService>();
-            service.AddTransient<IEmailHelper, EmailHelper>();
             service.AddTransient<ICartService, CartService>();
-            
-
-
-
         }
 
         public static async Task SeedData(this WebApplication webApplication, IConfiguration configuration)
@@ -66,10 +62,8 @@ namespace RestaurantManagement.Infrastructure.Configuration
                 var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                 var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
                 var passwordHasher = scope.ServiceProvider.GetRequiredService<PasswordHasher<ApplicationUser>>();
-
                 var usersDefault =   configuration.GetSection("DefaultUsers")?.Get<List<DefaultUser>>();
                 var rolesDefault = configuration.GetSection("DefaultRoles")?.Get<List<string>>();
-
 
                 // Create new roles
                 foreach (var role in rolesDefault)
@@ -100,17 +94,12 @@ namespace RestaurantManagement.Infrastructure.Configuration
                         Id = Guid.NewGuid().ToString(),
                         UserName = user.Username,
                         PasswordHash = passwordHasher.HashPassword(new ApplicationUser(), user.Password),
-                        EmailConfirmed = false,
-                        PhoneNumberConfirmed = false,
-                        TwoFactorEnabled = false,
-                        LockoutEnabled = false,
                         AccessFailedCount = 0
                     });
 
                     var currentUser = await userManager.FindByNameAsync(user.Username);
 
                     await userManager.AddToRoleAsync(currentUser, user.Role);
-
                 }
             }
         }
@@ -121,5 +110,4 @@ namespace RestaurantManagement.Infrastructure.Configuration
         public string Password { get; set; }
         public string Role { get; set; }
     }
-
 }

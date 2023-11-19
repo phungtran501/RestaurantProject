@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RestaurantManagement.Domain.Entities;
@@ -8,6 +8,7 @@ using RestaurantManagement.UI.wwwroot.admin.Utility;
 
 namespace RestaurantManagement.UI.Controllers
 {
+    [Authorize]
     public class CheckOutController : BaseController
     {
         const string SessionKeyCart = "_SessionCart";
@@ -20,6 +21,7 @@ namespace RestaurantManagement.UI.Controllers
             _userManager = userManager;
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var carts = HttpContext.Session.Get<List<CartModel>>(SessionKeyCart);
