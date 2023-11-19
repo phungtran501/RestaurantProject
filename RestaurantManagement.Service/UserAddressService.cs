@@ -1,20 +1,11 @@
 ﻿using Dapper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using RestaurantManagement.Data;
 using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Enums;
-using RestaurantManagement.Domain.Helper;
 using RestaurantManagement.Service.Abstracts;
 using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.UI.Areas.Admin.Models;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RestaurantManagement.Service
 {
@@ -35,7 +26,7 @@ namespace RestaurantManagement.Service
 
             try
             {
-                var foods = await _unitOfWork.UserAddressRepository.GetData(f => f.IsActive);
+                var users = await _unitOfWork.UserAddressRepository.GetData(f => f.IsActive);
 
                 DynamicParameters dynamicParameters = new DynamicParameters();
 
@@ -48,24 +39,22 @@ namespace RestaurantManagement.Service
 
                 var total = dynamicParameters.Get<int>("totalRecord");
 
-
                 var data = result.Select(x => new
                 {
-                    Id = ActionDatatable(x.Id),
+                    x.Id,
                     x.UserName,
                     x.Fullname,
                     x.Address,
                     x.Phone,
                     x.IsActive
 
-
                 }).ToArray();
 
                 responseDatatable = new ResponseDatatable
                 {
                     Draw = requestDatatable.Draw,
-                    RecordsTotal = foods.Count(),
-                    RecordsFiltered = foods.Count(),
+                    RecordsTotal = users.Count(),
+                    RecordsFiltered = users.Count(),
                     Data = data
                 };
             }
@@ -74,21 +63,7 @@ namespace RestaurantManagement.Service
                 throw;
             }
 
-
-
-            
-
             return responseDatatable;
-
-
-        }
-
-        private string ActionDatatable(int id)
-        {
-            string delete = "<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>";
-            string edit = $"<a href=\"/admin/useraddress/insertupdate?id={id}\" title='edit'><span class=\"ti-pencil\"></span></a>";
-
-            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}</span>";
         }
 
         public async Task<ResponseModel> CreateUpdate(UserAddressViewModel userAddressViewModel)
@@ -120,7 +95,6 @@ namespace RestaurantManagement.Service
                 userAddress.IsActive = userAddressViewModel.IsActive;
                 userAddress.Address = userAddressViewModel.Address;
                 userAddress.Fullname = userAddressViewModel.Fullname;
-
 
                 _unitOfWork.UserAddressRepository.Update(userAddress);
                 await _unitOfWork.UserAddressRepository.Commit();

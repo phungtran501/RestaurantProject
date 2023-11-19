@@ -2,14 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
-using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.UI.Areas.Admin.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RestaurantManagement.Service
 {
@@ -26,7 +20,6 @@ namespace RestaurantManagement.Service
 
         public async Task<IEnumerable<CommentModel>> GetCommentByFoodId(int foodId)
         {
-            //var comments = await _unitOfWork.CommentRepository.GetData(x => x.FoodId == id);
             List<ApplicationUser> users = await _userManager.Users.ToListAsync();
 
             var comments = await _unitOfWork.CommentRepository.GetData(x => x.IsActive);

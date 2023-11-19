@@ -7,9 +7,8 @@ using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.UI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class UserAddressController : Controller
+
+    public class UserAddressController : BaseController
     {
         private readonly IAccountService _accountService;
         private readonly IUserAddressService _userAddressService;

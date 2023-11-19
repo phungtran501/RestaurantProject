@@ -43,7 +43,6 @@ namespace RestaurantManagement.Infrastructure.Configuration
             service.AddTransient<IDapperHelper, DapperHelper>();
             service.AddTransient<IImageHandler, ImageHandler>();
             service.AddTransient<IUserService, UserService>();
-            service.AddTransient<IUserTokenService, UserTokenService>();
             service.AddTransient<IAccountService, AccountService>();
             service.AddTransient<IRoleService, RoleService>();
             service.AddTransient<ICategoriesService, CategoriesService>();

@@ -20,6 +20,11 @@
                     return;
                 };
 
+                const firstProduct = response[0].id;
+
+                document.getElementById('img-product').src = `/images/food/${firstProduct}.png`;
+
+
                 response.forEach((food, index) => {
                     li += `<li>
                                 <div>

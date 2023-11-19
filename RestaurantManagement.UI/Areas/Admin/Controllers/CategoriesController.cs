@@ -7,9 +7,8 @@ using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.UI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class CategoriesController : Controller
+
+    public class CategoriesController : BaseController
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ICategoriesService _categoriesService;

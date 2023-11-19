@@ -7,9 +7,8 @@ using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.UI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class RoleController : Controller
+
+    public class RoleController : BaseController
     {
         private readonly IRoleService _roleService;
         private readonly RoleManager<IdentityRole> _roleManager;

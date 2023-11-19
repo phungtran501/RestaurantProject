@@ -1,12 +1,4 @@
-﻿using RestaurantManagement.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RestaurantManagement.UI.Areas.Admin.Models
+﻿namespace RestaurantManagement.UI.Areas.Admin.Models
 {
     public class CommentModel
     {

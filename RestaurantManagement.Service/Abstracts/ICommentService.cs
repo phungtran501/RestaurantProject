@@ -1,5 +1,4 @@
-﻿using RestaurantManagement.Service.DTOs;
-using RestaurantManagement.UI.Areas.Admin.Models;
+﻿using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.Service
 {

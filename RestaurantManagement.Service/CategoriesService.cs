@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
@@ -8,12 +7,8 @@ using RestaurantManagement.Domain.Helper;
 using RestaurantManagement.Service.Abstracts;
 using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.UI.Areas.Admin.Models;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RestaurantManagement.Service
 {
@@ -44,10 +39,9 @@ namespace RestaurantManagement.Service
 
             int totalRecords = categories.Count();
 
-
             var data = result.Select(x => new
             {
-                Id = ActionDatatable(x.Id),
+                x.Id,
                 x.Name
             }).ToArray();
 
@@ -55,21 +49,11 @@ namespace RestaurantManagement.Service
             {
                 Draw = requestDatatable.Draw,
                 RecordsTotal = categories.Count(),
-                RecordsFiltered = result.Count(),
+                RecordsFiltered = categories.Count(),
                 Data = data
             };
 
             return responseDatatable;
-
-
-        }
-
-        private string ActionDatatable(int id)
-        {
-            string delete = "<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>";
-            string edit = $"<a href=\"/admin/categories/insertupdate?id={id}\" title='edit'><span class=\"ti-pencil\"></span></a>";
-
-            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}</span>";
         }
 
         public async Task<IEnumerable<SelectListItem>> GetCategory()
@@ -89,8 +73,6 @@ namespace RestaurantManagement.Service
 
         public async Task<ResponseModel> CreateUpdate(CategoryModel categoryModel)
         {
-            
-            //1 - Steak
             var category = await _unitOfWork.CategoryRepository.GetSingleByConditionAsync(x => x.Name.ToLower() == categoryModel.Name.ToLower() //true && true
                                                                                    && x.Id != categoryModel.Id);
             if (category is not null)
@@ -118,15 +100,13 @@ namespace RestaurantManagement.Service
                 await _unitOfWork.CategoryRepository.Commit();
                 maxId = cat.Id;
             }
-            else  //DRY = dont repeat yourself
+            else  
             {
                 var cat = await _unitOfWork.CategoryRepository.GetById(categoryModel.Id);
                 cat.Name = categoryModel.Name;
                 _unitOfWork.CategoryRepository.Update(cat);
                 await _unitOfWork.CategoryRepository.Commit();
             }
-
-            
 
             await _imageHandler.SaveImage("wwwroot/images/category", new List<IFormFile> { categoryModel.CategoryImage }, $"{maxId}.png");
 

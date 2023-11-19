@@ -8,7 +8,7 @@ namespace RestaurantManagement.Domain.Helper
         {
             if (files.Any())
             {
-                string basePath = Path.Combine(Directory.GetCurrentDirectory(), path); //path+ "/" +path
+                string basePath = Path.Combine(Directory.GetCurrentDirectory(), path); 
 
                 if (!Directory.Exists(basePath))
                 {

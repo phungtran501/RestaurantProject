@@ -14,29 +14,6 @@
             </div><!-- .nk-header-brand -->
             <div class="nk-header-tools">
                 <ul class="nk-quick-nav">
-                    <li class="dropdown language-dropdown d-none d-sm-block me-n1">
-                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-bs-toggle="dropdown">
-                            <div class="quick-icon border border-light">
-                                <img class="icon" src="~/admin/assets/images/flags/english-sq.png" alt="">
-                            </div>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-s1">
-                            <ul class="language-list">
-                                <li>
-                                    <a href="#" class="language-item">
-                                        <img src="~/admin/assets/images/flags/english.png" alt="" class="language-flag">
-                                        <span class="language-name">English</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="language-item">
-                                        <img src="~/admin/assets/images/flags/spanish.png" alt="" class="language-flag">
-                                        <span class="language-name">Español</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li><!-- .dropdown -->
                     <li class="dropdown user-dropdown">
                         <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
                             <div class="user-toggle">
@@ -50,22 +27,6 @@
                             </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-md dropdown-menu-end dropdown-menu-s1">
-                            <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
-                                <div class="user-card">
-                                    <div class="user-avatar">
-                                        <img src="~/images/@(User.FindFirst(ClaimTypes.NameIdentifier)?.Value).png" class="avatar-style" />
-                                    </div>
-                                    <div class="user-info">
-                                        <span class="lead-text">@User.Identity.Name</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dropdown-inner">
-                                <ul class="link-list">
-                                    <li><a href="html/user-profile-regular.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
-                                    <li><a href="html/user-profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
-                                </ul>
-                            </div>
                             <div class="dropdown-inner">
                                 <ul class="link-list">
                                     <li>

@@ -1,9 +1,5 @@
 ﻿using Dapper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using RestaurantManagement.Data;
 using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Enums;
@@ -11,12 +7,8 @@ using RestaurantManagement.Service.Abstracts;
 using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.Service.DTOs.Cart;
 using RestaurantManagement.UI.Areas.Admin.Models;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace RestaurantManagement.Service
 {
@@ -126,14 +118,13 @@ namespace RestaurantManagement.Service
 
             var total = dynamicParameters.Get<int>("totalRecord");
 
-
             var data = result.Select(x => new CartDTOGrid
             {
-                Id = ActionDatatable(x.Id),
+                Id = x.Id,
                 Username = x.Username,
                 Note = x.Note,
                 CreateDate = x.CreateDate.ToString("dd/MM/yyyy"),
-                Status = x.Status == 1 ? "Confirm" : "Completed",
+                Status = GetStatusCart(x.Status),
             }).ToArray();
 
             responseDatatable = new ResponseDatatable
@@ -147,67 +138,64 @@ namespace RestaurantManagement.Service
             return responseDatatable;
         }
 
-        private string ActionDatatable(int id)
+        private string GetStatusCart(short status)
         {
-            string delete = "<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>";
-            string edit = $"<a href=\"/admin/cart/insertupdate?id={id}\" title='edit'><span class=\"ti-pencil\"></span></a>";
-            string show = $"<a href=\"#\" title='show' class='btn-show'><span class=\"ti-receipt\"></span></a>";
+            switch (status)
+            {
+                case (short)StatusCart.Confirm:
+                    return nameof(StatusCart.Confirm);
+                case (short)StatusCart.Completed:
+                    return nameof(StatusCart.Completed);
+                default:
+                    return default;
+            }
 
-            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}&nbsp;{show}</span>";
         }
+
+        //public IEnumerable<SelectListItem> GetStatuss()
+        //{
+        //    StatusCart statusCart = new StatusCart();
+
+        //    });
+
+        //}
+
 
         public async Task<IEnumerable<CartDetailModel>> GetDetailByCartId(int idCart)
         {
 
-            var lsCart = await _unitOfWork.CartDetailRepository.Table.Where( x => x.CartId == idCart)
-                .Join(_unitOfWork.FoodRepository.Table, x => x.FoodId, y => y.Id, (detail, food) => new CartDetailModel
-                                                                                        {
-                                                                                              FoodName = food.Name,
-                                                                                              Quantity = detail.Quantity,
-                                                                                              FoodPrice = food.Price,
-                                                                                              TotalPrice = detail.Price
-                                                                                          }).ToListAsync();
+            var lsCart = await _unitOfWork.CartDetailRepository.Table
+                .Where( x => x.CartId == idCart)
+                .Join(_unitOfWork.FoodRepository.Table, 
+                x => x.FoodId, 
+                y => y.Id, 
+                (detail, food) => new CartDetailModel
+                                    {
+                                        FoodName = food.Name,
+                                        Quantity = detail.Quantity,
+                                        FoodPrice = food.Price
+                                    }).ToListAsync();
 
 
             return lsCart;
         }
 
-        public async Task<ResponseModel> CreateUpdate(CartDTO cartDTO)
+        public async Task<ResponseModel> UpdateCart(CartDTO cartDTO)
         {
-
-            if (cartDTO.Id == 0)
-            {
-                var cart = new Cart
-                {
-                    Note = cartDTO.Note,
-                    UserId = cartDTO.Username,
-                    Status = cartDTO.Status,
-                    CreateDate = DateTime.Now
-                };
-
-                await _unitOfWork.CartRepository.Insert(cart);
-            }
-            else 
-            {
                 var cart = await _unitOfWork.CartRepository.GetById(cartDTO.Id);
                 cart.Note = cartDTO.Note;
                 cart.Status = cartDTO.Status;
                 cart.CreateDate = DateTime.Now;
-                
-            }
+                await _unitOfWork.CartRepository.Insert(cart);
+
             await _unitOfWork.CartRepository.Commit();
 
             return new ResponseModel
             {
                 Status = true,
-                Message = cartDTO.Id == 0 ? "" : "Insert successful",
+                Message = "Update successful",
                 StatusType = StatusType.Success,
-                Action = cartDTO.Id == 0 ? ActionType.Insert : ActionType.Update
             };
         }
-
-        
-
-
     }
 }

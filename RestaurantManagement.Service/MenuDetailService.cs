@@ -1,10 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using RestaurantManagement.Data.Abstract;
+﻿using RestaurantManagement.Data.Abstract;
 using RestaurantManagement.Domain.Entities;
-using RestaurantManagement.Domain.Enums;
-using RestaurantManagement.Domain.Helper;
 using RestaurantManagement.Service.Abstracts;
-using RestaurantManagement.Service.DTOs;
 using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.Service
@@ -26,8 +22,6 @@ namespace RestaurantManagement.Service
         {
             var menu = await _unitOfWork.MenuDetailRepository.GetData(x => x.MenuId == idMenu);
 
-
-
             var getMenuDetail = menu.Select(x => new MenuDetailModel
             {
                 FoodId = x.FoodId,
@@ -47,8 +41,6 @@ namespace RestaurantManagement.Service
 
         public async Task InsertUpdate(List<MenuDetailModel> menuDetailModel)
         {
-
-
             foreach (var item in menuDetailModel)
             {
                 if (item.Id == 0)

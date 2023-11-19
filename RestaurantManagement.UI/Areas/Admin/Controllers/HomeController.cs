@@ -4,9 +4,8 @@ using RestaurantManagement.UI.Areas.Admin.Controllers;
 
 namespace RestaurantManagement.UI.Areas.System.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class HomeController : Controller
+
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {

@@ -1,0 +1,34 @@
+﻿
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <input type="hidden" id="cart-id" />
+        <div class="modal-content">
+            <div class="modal-header float-right">
+                <h5>Cart Detail</h5>
+                <div class="text-right">
+                    <i data-dismiss="modal" aria-label="Close" class="fa fa-close"></i>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <table class="table table-bordered mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col">Food</th>
+                                <th scope="col">Price</th>
+                                <th style="width:40px">Quantity</th>
+                                <th scope="col">Total Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-cart">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="close-modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

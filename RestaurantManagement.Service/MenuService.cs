@@ -11,7 +11,6 @@ namespace RestaurantManagement.Service
     public class MenuService : IMenuService
     {
         IUnitOfWork _unitOfWork;
-        //Repositoy<Menu>
         public MenuService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
@@ -35,10 +34,9 @@ namespace RestaurantManagement.Service
 
             int totalRecords = menus.Count();
 
-
             var data = result.Select(x => new
             {
-                Id = ActionDatatable(x.Id),
+                x.Id,
                 x.Name,
                 IsDisplay = $"<input type='checkbox' class='ck-display' {(x.IsDisplay ? "checked" : "" )}></input>",
             }).ToArray();
@@ -53,20 +51,10 @@ namespace RestaurantManagement.Service
 
             return responseDatatable;
 
-
-        }
-
-        private string ActionDatatable(int id)
-        {
-            string delete = "<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>";
-            string edit = $"<a href=\"/admin/menu/insertupdate?id={id}\" title='edit'><span class=\"ti-pencil\"></span></a>";
-            string add = $"<a href=\"/admin/menudetail/insertupdate?id={id}\" title='Add food' class='btn-add'><span class=\"ti-plus\"></span></a>";
-            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}&nbsp;{add}</span>";
         }
 
         public async Task<ResponseModel> CreateUpdate(MenuViewModel menuViewModel)
         {
-
             var menu = await _unitOfWork.MenuRepository.GetSingleByConditionAsync(x => x.Name.ToLower() == menuViewModel.Name.ToLower() 
                                                                                    && x.Id != menuViewModel.Id);
             if (menu is not null)
@@ -118,7 +106,6 @@ namespace RestaurantManagement.Service
 
         public async Task UpdateDisplayMenu(UpdateDisplayDTO updateDisplayDTO)
         {
-
                 var menu = await _unitOfWork.MenuRepository.GetById(updateDisplayDTO.key);
 
                 menu.IsDisplay = updateDisplayDTO.IsDisplay;
@@ -126,11 +113,7 @@ namespace RestaurantManagement.Service
                 _unitOfWork.MenuRepository.Update(menu);
 
                 await _unitOfWork.MenuRepository.Commit();
-
-            
-
         }
-
 
     }
 }

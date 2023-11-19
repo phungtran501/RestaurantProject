@@ -1,6 +1,13 @@
 ﻿(function () {
     const columns = [
-        { "data": "id", "name": "id", "autoWidth": true, "width": "100px" },
+        {
+            data: 'id', name: 'id', width: '100px',
+            render: function (id) {
+                return `<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>&nbsp
+                                    <a href=\"/admin/account/createupdate?id=${id}\" title='edit'><span class=\"ti-pencil\"></span></a>`;
+            }
+        },
+        
         { "data": "username", "name": "username", "autoWidth": true, "width": "150px" },
         { "data": "roleName", "name": "roleName", "autoWidth": true, "width": "180px" },
         { "data": "fullname", "name": "fullname", "autoWidth": true, "width": "180px" },

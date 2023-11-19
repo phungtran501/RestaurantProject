@@ -56,8 +56,7 @@ namespace RestaurantManagement.Service
 
             var total = dynamicParameters.Get<int>("totalRecord");
 
-
-            var data = result.Select(x => new { Id = ActionDatatable(x.Id), 
+            var data = result.Select(x => new { x.Id, 
                                                 x.Username, 
                                                 x.RoleName, 
                                                 x.Fullname, 
@@ -66,8 +65,7 @@ namespace RestaurantManagement.Service
                                                 x.Address,
                                                 IsSystem = x.IsSystem ? "Yes" : "No",
                                                 IsActive = x.IsActive ? "Yes" : "No"
-            })
-                            .ToArray();
+            }).ToArray();
 
             responseDatatable = new ResponseDatatable
             {
@@ -78,14 +76,6 @@ namespace RestaurantManagement.Service
             };
 
             return responseDatatable;
-        }
-
-        private string ActionDatatable(string id)
-        {
-            string delete = "<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>";
-            string edit = $"<a href=\"/admin/account/createupdate?id={id}\" title='edit'><span class=\"ti-pencil\"></span></a>";
-
-            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}</span>";
         }
 
         public async Task<ResponseModel> CreateUpdate(AccountViewModel accountViewModel)
@@ -108,9 +98,6 @@ namespace RestaurantManagement.Service
                     AccessFailedCount = 0
 
                 };
-
-
-
 
                 var result = await _userManager.CreateAsync(user, accountViewModel.Password);
 
@@ -144,11 +131,9 @@ namespace RestaurantManagement.Service
             //update
             else
             {
-                // 1 user --> 1 role (check create/update)
                 var user = await _userManager.FindByIdAsync(accountViewModel.Id);
 
                 var roles = await _userManager.GetRolesAsync(user);
-                
 
                 var isExist = await _userManager.IsInRoleAsync(user, accountViewModel.RoleId);
 
@@ -158,7 +143,6 @@ namespace RestaurantManagement.Service
                     await _userManager.AddToRoleAsync(user, accountViewModel.RoleId);
                 }
                 
-
                 user.Address = accountViewModel.Address;
                 user.Fullname = accountViewModel.Fullname;
                 user.Email = accountViewModel.Email;
@@ -166,7 +150,6 @@ namespace RestaurantManagement.Service
                 user.IsActive = accountViewModel.IsActive;
                 user.IsSystem = accountViewModel.IsSystem;
                 user.PhoneNumber = accountViewModel.PhoneNumber;
-
 
                 var result = await _userManager.UpdateAsync(user);
 
@@ -192,8 +175,6 @@ namespace RestaurantManagement.Service
                     };
                 }
             }
-
-            
         }
 
         public async Task DeleteUser(string key)
@@ -235,7 +216,6 @@ namespace RestaurantManagement.Service
         {
             if(registerModel != null)
             {
-                
                 var user = new ApplicationUser
                 {
                     UserName = registerModel.Username,

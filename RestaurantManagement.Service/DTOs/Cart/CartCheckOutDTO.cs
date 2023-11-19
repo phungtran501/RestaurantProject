@@ -1,12 +1,4 @@
-﻿using RestaurantManagement.Service.DTOs;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RestaurantManagement.Service.DTOs.Cart
+﻿namespace RestaurantManagement.Service.DTOs.Cart
 {
     public class CartCheckOutDTO
     {

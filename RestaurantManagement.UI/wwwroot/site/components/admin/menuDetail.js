@@ -1,6 +1,13 @@
 ﻿(function () {
     const columns = [
-        { "data": "id", "name": "id", "width": "100px" },
+        {
+            data: 'id', name: 'id', width: '150px',
+            render: function (id) {
+                return `<span data-key='${id}'><a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>&nbsp
+                                    <a href=\"/admin/menu/insertupdate?id=${id}\" title='edit'><span class=\"ti-pencil\"></span></a>&nbsp
+                                    <a href=\"/admin/menudetail/insertupdate?id=${id}\" title='Add food' class='btn-add'><span class=\"ti-plus\"></span></a>`;
+            }
+        },
         { "data": "name", "name": "name", "autoWidth": true },
         { "data": "isDisplay", "name": "isDisplay", "width": "130px" },
     ];
@@ -105,8 +112,6 @@
         if (foodId) {
             $(`.ddd_${id}`).val(foodId);
         }
-
-        
 
     }
 

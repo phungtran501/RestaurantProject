@@ -1,9 +1,8 @@
-﻿
-namespace RestaurantManagement.Service.DTOs.Cart
+﻿namespace RestaurantManagement.Service.DTOs.Cart
 {
     public class CartDTOGrid
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string? Note { get; set; }
         public string CreateDate { get; set; }
         public string Status { get; set; }

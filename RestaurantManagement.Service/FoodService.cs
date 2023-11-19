@@ -45,18 +45,15 @@ namespace RestaurantManagement.Service
 
             var total = dynamicParameters.Get<int>("totalRecord");
 
-
             var data = result.Select(x => new
             {
-                Id = ActionDatatable(x.Id),
+                x.Id,
                 x.FoodName,
                 x.Description,
                 x.Price,
                 x.Available,
                 x.IsActive,
                 x.CategoryName
-
-
             }).OrderBy(x => x.FoodName).ToArray();
 
             responseDatatable = new ResponseDatatable
@@ -68,18 +65,7 @@ namespace RestaurantManagement.Service
             };
 
             return responseDatatable;
-
-
         }
-
-        private string ActionDatatable(int id)
-        {
-            string delete = "<a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>";
-            string edit = $"<a href=\"/admin/food/insertupdate?id={id}\" title='edit'><span class=\"ti-pencil\"></span></a>";
-
-            return $"<span data-key=\"{id}\">{edit}&nbsp;{delete}</span>";
-        }
-
 
         public async Task<ResponseModel> CreateUpdate(FoodModel foodModel)
         {
@@ -87,7 +73,6 @@ namespace RestaurantManagement.Service
 
             if (foodModel.Id is null)
             {
-
                 var food = new Food
                 {
                     Available = foodModel.Available,
@@ -130,7 +115,6 @@ namespace RestaurantManagement.Service
                 StatusType = StatusType.Success,
                 Action = foodModel.Id is null ? ActionType.Insert : ActionType.Update
             };
-
         }
 
         public async Task DeleteFood(int key)
@@ -147,6 +131,7 @@ namespace RestaurantManagement.Service
 
             return foods.Select(x => new FoodModel
             {
+                Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
                 Price = x.Price,
@@ -169,7 +154,6 @@ namespace RestaurantManagement.Service
             var radomFood = getFood.OrderBy(x => Guid.NewGuid()).Take(4).ToList();
 
             return radomFood;
-
         }
 
         public async Task<FoodModel> GetFoodDetail(string code)
@@ -228,7 +212,6 @@ namespace RestaurantManagement.Service
             {
                 FoodByMenuDTO foodByMenuDTO = new();
 
-
                 foodByMenuDTO.MenuName = item.Name;
 
                 var foods = lsFoods.Where(x => x.MenuId == item.MenuId).Select(x => new MenuFood
@@ -238,11 +221,9 @@ namespace RestaurantManagement.Service
                     Description = x.Description
                 }).ToList();
 
-
                 foodByMenuDTO.Foods = foods;
 
                 foodByMenuDTOs.Add(foodByMenuDTO);
-
             }
 
             return foodByMenuDTOs;
@@ -272,7 +253,6 @@ namespace RestaurantManagement.Service
             }
 
             return cartItemDTOs;
-
         }
     }
 }

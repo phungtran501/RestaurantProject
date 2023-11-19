@@ -1,6 +1,4 @@
-﻿
-
-namespace RestaurantManagement.Domain.Enums
+﻿namespace RestaurantManagement.Domain.Enums
 {
     public enum ActionType
     {

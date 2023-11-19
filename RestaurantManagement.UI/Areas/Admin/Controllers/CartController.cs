@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using RestaurantManagement.Data.Abstract;
+using RestaurantManagement.Domain.Entities;
 using RestaurantManagement.Domain.Enums;
 using RestaurantManagement.Service;
 using RestaurantManagement.Service.Abstracts;
@@ -9,20 +13,29 @@ using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.UI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class CartController : Controller
+
+    public class CartController : BaseController
     {
         private readonly ICartService _cartService;
         private readonly IAccountService _accountService;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CartController(ICartService cartService, IAccountService accountService)
+        public CartController(ICartService cartService, IAccountService accountService, IUnitOfWork unitOfWork)
         {
             _cartService = cartService;
             _accountService = accountService;
+            _unitOfWork = unitOfWork;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var foods = await _unitOfWork.FoodRepository.GetData(x => x.IsActive);
+
+            ViewBag.Foods = foods.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Id.ToString(),
+
+            });
             return View();
         }
 
@@ -35,7 +48,7 @@ namespace RestaurantManagement.UI.Areas.Admin.Controllers
             return Json(result); // = Ok()
         }
 
-        [HttpPost]
+        [HttpGet]
         public async Task<ActionResult> GetDetail(int key)
         {
             var detail = await _cartService.GetDetailByCartId(key);
@@ -44,35 +57,37 @@ namespace RestaurantManagement.UI.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> CreateUpdate(int id)
+        public async Task<IActionResult> Update(int id)
         {
-            var users = _accountService.GetUsers();
+            var cart = await _unitOfWork.CartRepository.GetById(id);
 
-            this.ViewData["user"] = users;
-
-            if (id == 0)
+            var resutl = new CartDTO
             {
-                return View(new CartDTO());
-            }
+                Id = cart.Id,
+                Note = cart.Note,
+                Status = cart.Status,
+            };
 
+            var detail = await _cartService.GetDetailByCartId(id);
 
-            return View();
+            ViewBag.Detail = detail;
+
+            return View(resutl);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> InsertUpdate(CartDTO cartDTO)
+        public async Task<IActionResult> Update(CartDTO cartDTO)
         {
             if (ModelState.IsValid)
             {
-                var result = await _cartService.CreateUpdate(cartDTO);
+                var result = await _cartService.UpdateCart(cartDTO);
                 if (result.Status && result.StatusType == StatusType.Success)
                 {
                     return RedirectToAction("Index", "cart", new { area = "admin" });
                 }
                 else
                 {
-                    ViewBag.IsEdit = result.Action == ActionType.Insert ? false : true;
                     ViewBag.Error = result.Message;
                 }
             }

@@ -14,9 +14,8 @@ using System.Text;
 
 namespace RestaurantManagement.UI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class AccountController : Controller
+
+    public class AccountController : BaseController
     {
         private readonly IAccountService _accountService;
         private readonly IRoleService _roleService;

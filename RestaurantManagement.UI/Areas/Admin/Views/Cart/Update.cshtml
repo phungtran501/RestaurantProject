@@ -1,0 +1,117 @@
+﻿@using RestaurantManagement.Service.DTOs.Cart;
+@model RestaurantManagement.Service.DTOs.Cart.CartDTO
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="nk-content-inner">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="nk-block nk-block-lg">
+                <div class="nk-block-head">
+                    <div class="nk-block-head-content">
+                        <h4 class="title nk-block-title">Cart Form</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="card card-bordered card-preview">
+                        <div class="card-inner">
+                            <div class="preview-block">
+                                <span class="text-danger">@(ViewBag.Error is not null ? ViewBag.Error : "")</span>
+                                <span class="text-danger"></span>
+                                <div class="row">
+                                <div class="col-6">
+                                    <form asp-controller="cart" asp-action="update" asp-antiforgery="true" method="post"
+                                          class="form-validate is-alter" autocomplete="off">
+                                        <input type="hidden" asp-for="Id" />
+                                        <div class="col-sm-8 form-list-account">
+                                            <div class="form-group">
+                                                <label class="form-label" for="default-01">Note</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control" asp-for="Note" placeholder="Enter note" />
+                                                    <span asp-validation-for="Note" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="form-label" for="default-01">Status</label>
+                                                <div class="form-control-wrap">
+                                                    <input type="number" class="form-control" asp-for="Status" placeholder="Enter status" />
+                                                    <span asp-validation-for="Status" class="text-danger"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row gy-2">
+                                                <div class="form-group row gy-2">
+                                                    <div class="col-md-8 col-sm-6 btt-center">
+                                                        <button type="submit" class="btn btn-outline-primary">Submit</button> &nbsp;
+                                                        <a asp-controller="cart" asp-action="index" asp-area="admin" title="cancle" class="btn btn-outline-primary">Cancle</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                                
+                                    <div class="col-6">
+                                        <h5 class="title nk-block-title">Cart Detail</h5>
+                                
+                                            <div>
+                                                <table class="table table-bordered mt-3">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Food</th>
+                                                        <th scope="col" style="width:40px">Price</th>
+                                                            <th style="width:40px">Quantity</th>
+                                                        <th style="width:100px">Sub Price</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                @{
+                                                    var detail = (IEnumerable<CartDetailModel>)ViewBag.Detail;
+
+                                                    var total = 0;
+                                                    foreach (var item in detail)
+                                                    {
+                                                        <tr>
+                                                            <td>@item.FoodName</td>
+                                                            <td>@item.FoodPrice</td>
+                                                            <td>@item.Quantity</td>
+                                                            <td>@(item.FoodPrice * item.Quantity)</td>
+                                                        </tr>
+                                                        total += @item.Quantity * (int)@item.FoodPrice;
+                                                    }
+                                                    <tr>
+                                                        <td colspan="3">Total Price</td>
+                                                        <td>@total</td>
+                                                    </tr>
+
+                                                    }
+                                                </table>
+                                            </div>
+                                       
+
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+
+

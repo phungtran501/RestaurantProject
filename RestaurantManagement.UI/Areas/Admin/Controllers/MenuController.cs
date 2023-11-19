@@ -8,9 +8,8 @@ using RestaurantManagement.UI.Areas.Admin.Models;
 
 namespace RestaurantManagement.UI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize]
-    public class MenuController : Controller
+
+    public class MenuController : BaseController
     {
         private readonly IMenuService _menuService;
         private readonly IUnitOfWork _unitOfWork;

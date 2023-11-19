@@ -7,7 +7,7 @@ namespace RestaurantManagement.Service.Abstracts
     public interface ICartService
     {
         Task CreateCart(CartCheckOutDTO cartCheckOutDTO, List<CartModel> cartModels);
-        Task<ResponseModel> CreateUpdate(CartDTO cartDTO);
+        Task<ResponseModel> UpdateCart(CartDTO cartDTO);
         Task<IEnumerable<CartDetailModel>> GetDetailByCartId(int idCart);
         Task<ResponseDatatable> GetListCart(RequestDatatable requestDatatable);
         Task<int> TotalCart(List<CartModel> cartModels);

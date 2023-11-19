@@ -36,7 +36,13 @@
     <script>
 
         const columns = [
-            { "data": "id", "name": "id", "width": "100px" },
+            {
+                data: 'id', name: 'id', width: '100px',
+                render: function (id) {
+                    return ` <a href=\"#\" title='delete' class='btn-delete'><span class=\"ti-trash\"></span></a>&nbsp
+                                                    <a href=\"/admin/food/insertupdate?id=${id}\" title='edit'><span class=\"ti-pencil\"></span></a>`;
+                }
+            },
             { "data": "foodName", "name": "foodName", "autowidth": true },
             { "data": "categoryName", "name": "categoryName", "autowidth": true },
             { "data": "description", "name": "description", "autowidth": true },

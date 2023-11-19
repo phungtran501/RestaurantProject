@@ -439,6 +439,7 @@ figure {
     height: 62px;
     display: inline-block;
     text-transform: capitalize;
+    font-size: 20px;
 }
 .button:hover {
     color: white;
@@ -3070,13 +3071,14 @@ input[type='radio']:checked:after {
     padding-top: 30px;
 }
 .variations_form input {
-    width: 120px;
-    height: 60px;
+    width: 80px;
+    height: 40px;
     border-radius: 51px;
     padding-left: 20px;
     border: 3px solid #ffd40d;
     outline: 0;
     padding-right: 10px;
+    font-size: 18px;
 }
 /* 64. product_meta */
 ul.product_meta {
@@ -3150,7 +3152,7 @@ ul.product_meta li a {
     font-size: 26px;
 }
 .review h3 {
-    font-size: 50px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 /* 67. leave-comment */
@@ -4285,4 +4287,24 @@ button.swal-button.swal-button--confirm {
 }
 .login-register-left{
     margin-left: 1090px;
+}
+
+.login-register {
+    float: right;
+}
+.cart-count {
+    background-color: #ffd40d;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    bottom: 10px;
+    left: 51%;
+    transform: translateX(-47%);
+    z-index: 1;
+    font-size: 10px;
 }

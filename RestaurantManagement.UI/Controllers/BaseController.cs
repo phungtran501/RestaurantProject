@@ -23,5 +23,10 @@ namespace RestaurantManagement.UI.Controllers
 
         }
 
+
+        public override void OnActionExecuted(ActionExecutedContext context)
+        {
+            base.OnActionExecuted(context);
+        }
     }
 }

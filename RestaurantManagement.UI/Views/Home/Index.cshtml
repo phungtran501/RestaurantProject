@@ -33,10 +33,14 @@
         </div>
         <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                @{
+                    CultureInfo culture = new CultureInfo("vi-VN");
+                    var foods = (IEnumerable<FoodModel>)ViewBag.Food;
+                }
                 <div class="row align-items-center discover-menu">
                     <div class="col-xl-6">
                         <div class="discover-img">
-                            <img alt="discover" src="https://via.placeholder.com/590x588">
+                            <img alt="discover" src="~/images/food/@(foods.FirstOrDefault().Id).png" height="510" id="img-product"> 
                         </div>
                     </div>
                     <div class="col-xl-5">
@@ -45,8 +49,8 @@
                             <h4 id="category-title">@ViewBag.FirstNameCategory</h4>
                             <ul id="ls-food">
                                 @{
-                                    CultureInfo culture = new CultureInfo("vi-VN");
-                                    var foods = (IEnumerable<FoodModel>)ViewBag.Food;
+                                    
+
                                     foreach(var f in foods)
                                     {
                                         <li>
