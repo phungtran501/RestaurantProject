@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W+70BsUzRcPiHR24rkkRpiG0akBSKEEti+uiqrYwEX8=",
+  "Hash": "AUf0TL+70JFAJYX6P0TFpOLsCJProa+KAsXOA3ZLU1s=",
   "Source": "RestaurantManagement.UI",
   "BasePath": "_content/RestaurantManagement.UI",
   "Mode": "Default",
@@ -7053,6 +7053,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\food\\9.png"
+    },
+    {
+      "Identity": "F:\\RestaurantProject\\RestaurantManagement.UI\\wwwroot\\images\\logo-index.jpg",
+      "SourceId": "RestaurantManagement.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\RestaurantProject\\RestaurantManagement.UI\\wwwroot\\",
+      "BasePath": "_content/RestaurantManagement.UI",
+      "RelativePath": "images/logo-index.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo-index.jpg"
     },
     {
       "Identity": "F:\\RestaurantProject\\RestaurantManagement.UI\\wwwroot\\images\\no-pictures.png",

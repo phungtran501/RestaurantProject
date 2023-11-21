@@ -15,7 +15,7 @@ namespace RestaurantManagement.Data
         Repository<Category> _repositoryCategory;
         Repository<Comment> _repositoryComment;
         Repository<Food> _repositoryFood;
-        Repository<UserToken> _repositoryUserToken;
+
         private bool disposedValue;
 
         public UnitOfWork(RestaurantManagementContext restaurantManagementContext)

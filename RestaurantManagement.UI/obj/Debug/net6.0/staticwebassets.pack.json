@@ -1413,6 +1413,10 @@
       "PackagePath": "staticwebassets\\images\\food\\9.png"
     },
     {
+      "Id": "F:\\RestaurantProject\\RestaurantManagement.UI\\wwwroot\\images\\logo-index.jpg",
+      "PackagePath": "staticwebassets\\images\\logo-index.jpg"
+    },
+    {
       "Id": "F:\\RestaurantProject\\RestaurantManagement.UI\\wwwroot\\images\\no-pictures.png",
       "PackagePath": "staticwebassets\\images\\no-pictures.png"
     },
